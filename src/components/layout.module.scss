@@ -1,5 +1,14 @@
 .layout {
-  &__footer {
-    color: #fff;
-  }
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  padding-left: 100px;
+}
+
+.layout-footer {
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 100px;
 }

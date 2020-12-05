@@ -3,14 +3,10 @@
 <p align="center">
   <em>
     TypeScript
-    · jest
-    · testing-library
-    · Storybook
   </em>
   <br />
   <em>
     ESLint + airbnb
-    · stylelint
     · remark-lint
     · Prettier
   </em>
@@ -44,11 +40,7 @@ Supports:
 - [Renovate](https://renovate.whitesourcesoftware.com/)
 - [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 - [PropTypes](https://github.com/facebook/prop-types)
-- [Storybook](https://storybook.js.org/)
 - [Typography.js](https://kyleamathews.github.io/typography.js/)
-- [Jest](https://jestjs.io/)
-- [testing-library](https://testing-library.com/)
-- [stylelint](https://stylelint.io/)
 - [ESLint](https://eslint.org/)
 - [Airbnb ESLint config](https://github.com/airbnb/javascript)
 - [Prettier support for ESLint](https://github.com/prettier/eslint-plugin-prettier)
@@ -79,7 +71,7 @@ Supports:
 
 1.  **Start developing.**
 
-    In order to run Storybook + Gatsby dev server, navigate into your new site’s directory and start it up.
+    In order to run Gatsby dev server, navigate into your new site’s directory and start it up.
 
     ```shell
     $ cd opinionated-project/

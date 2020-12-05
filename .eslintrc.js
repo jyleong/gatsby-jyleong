@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
+  extends: ["airbnb", "prettier", "prettier/react"],
   plugins: ["prettier"],
   rules: {
     "import/no-extraneous-dependencies": "off",
@@ -7,7 +7,7 @@ module.exports = {
   overrides: [
     {
       files: ["**/*.ts", "**/*.tsx"],
-      extends: ["airbnb-typescript-prettier", "plugin:jest/recommended"],
+      extends: ["airbnb-typescript-prettier"],
       rules: {
         "import/no-extraneous-dependencies": "off",
         "@typescript-eslint/no-empty-interface": "warn",

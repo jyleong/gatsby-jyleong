@@ -1,0 +1,18 @@
+.section-base {
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.section-about,
+.section-resume {
+  @extend .section-base;
+  background-color: #f9f4f1;
+}
+
+.section-writing,
+.section-contact {
+  @extend .section-base;
+  background-color: #f1f6f9;
+  text-align: center;
+}

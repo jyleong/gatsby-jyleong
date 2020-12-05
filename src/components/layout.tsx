@@ -7,44 +7,38 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
-import Header from "./header";
-import styles from "./layout.module.scss";
+// import { useStaticQuery, graphql } from "gatsby";
+
+import layoutStyle from "./layout.module.scss";
 import "normalize.css";
+import Footer from "./footer";
+import Sidebar from "./sidebar";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer className={styles.layout__footer}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+    <div>
+      <Sidebar />
+      <div>
+        <div className={layoutStyle.layout}>{children}</div>
+        <div className={layoutStyle.layoutFooter}>
+          <Footer />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -32,7 +32,6 @@ excluded_files:
   - "Gemfile.lock"
   - ".typo-ci.yml"
   - ".gitignore"
-  - "jest.config.js"
 
 # Any typos we should ignore?
 excluded_words:

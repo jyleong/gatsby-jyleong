@@ -1,0 +1,32 @@
+.side-bar {
+  display: flex;
+  left: 0;
+  position: fixed;
+  margin-top: calc(100px + 7%);
+  transform: rotate(90deg) translateY(80px);
+  opacity: .4;
+  color: #999999;
+  div {
+      transform: rotate(180deg);
+      :hover{
+        border-bottom: #999999 2px solid;
+        cursor: pointer;
+      }
+  }
+  @media (max-width:1100px){
+    transform: rotate(-180deg);
+    margin-top: 10px;
+    z-index: 1000;
+  }
+
+}
+
+.link {
+  margin: 0 10px;
+  transition: 1s;
+  :hover{
+    transition: 1s;
+    border-color: #999999;
+    border-bottom: 2px solid;
+  }
+}

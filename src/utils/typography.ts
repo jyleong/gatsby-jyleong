@@ -1,8 +1,6 @@
 import Typography from "typography";
-import moragaTheme from "typography-theme-moraga";
+import twinPeaksTheme from "typography-theme-twin-peaks";
 
-moragaTheme.headerWeight = "300";
-
-const typography = new Typography(moragaTheme);
+const typography = new Typography(twinPeaksTheme);
 
 export default typography;
