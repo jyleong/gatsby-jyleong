@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby' 
 
 
+/*
+Can send this query down from layout when fully fleshed
+*/
 const Head: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -20,13 +23,13 @@ const Head: React.FC = () => {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={siteUrl} />
+      <meta name='description' content={description} />
+      <link rel='canonical' href={siteUrl} />
 
 
-      <meta property="og:url" content={siteUrl} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property='og:url' content={siteUrl} />
+      <meta property='og:title' content={title} />
+      <meta property='og:description' content={description} />
     </Helmet>
   )
 };

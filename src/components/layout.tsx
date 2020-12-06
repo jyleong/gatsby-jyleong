@@ -5,13 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
-import PropTypes from "prop-types";
-// import { useStaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
-import Head from "./head";
-import FooterComponent from "./footerComponent";
-import Sidebar from "./sidebar";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Head from './head';
+import FooterComponent from './footerComponent';
+import Sidebar from './sidebar';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -29,7 +28,7 @@ const LayoutContainer = styled.div`
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
-    <div id="root">
+    <div id='root'>
       <Head />
       <Sidebar />
       <div>

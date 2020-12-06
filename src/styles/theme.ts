@@ -15,8 +15,8 @@ const theme = {
   },
   
   fonts: {
-    main: "Playfair Display, serif",
-    code: "Roboto Mono, monospace",
+    main: 'Playfair Display, serif',
+    code: 'Roboto Mono, monospace',
   },
 	
 
@@ -32,7 +32,7 @@ const theme = {
   },
   
   shadows: {
-    shadow1: "0px 5px 20px rgba(30, 30, 31, 0.05)",
+    shadow1: '0px 5px 20px rgba(30, 30, 31, 0.05)',
   },
   
 	transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',

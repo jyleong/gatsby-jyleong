@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import { Link } from 'gatsby';
 // import PropTypes from "prop-types";
 // import Image from "../image";
-import styled from "styled-components";
-import { theme, mixins } from "../../styles";
+import styled from 'styled-components';
+import { theme, mixins } from '../../styles';
 // type WritingProps = {};
 
 const SectionContainer = styled.div`
@@ -13,7 +13,7 @@ const SectionContainer = styled.div`
 `;
 const SectionWriting: React.FC = () => {
   return (
-    <SectionContainer id="writing">
+    <SectionContainer id='writing'>
       <h3>Recent Writings</h3>
       {/* Blog list from GraphQL, recent 3 posts */}
       <div>
@@ -22,7 +22,7 @@ const SectionWriting: React.FC = () => {
         </ul>
       </div>
       <div>
-        <Link to="/writings/">Writings</Link>
+        <Link to='/writings/'>Writings</Link>
       </div>
     </SectionContainer>
   );

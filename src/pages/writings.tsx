@@ -33,7 +33,6 @@ const BlogPostCard = styled.div`
   background-color: ${theme.colors.primaryBackground};
 `;
 
-
 const Writings = () => {
 
   const posts = useStaticQuery(graphql`
@@ -61,7 +60,7 @@ const Writings = () => {
       <TitleH1>All blog posts</TitleH1>
       <BodyContainer>
         <ListContainer>
-          {posts.allMarkdownRemark.edges.map((edge: any, index: number) => {
+          {posts.allMarkdownRemark.edges.map((edge: any) => {
             const { title, date } = edge.node.frontmatter;
             const id = edge.node.id;
             const slug = edge.node.fields.slug;

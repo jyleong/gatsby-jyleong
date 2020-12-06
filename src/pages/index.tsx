@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 // import { Link } from "gatsby";
 
-import Layout from "../components/layout";
-import Content from "../components/content";
+import Layout from '../components/layout';
+import Content from '../components/content';
 // import Image from "../components/image";
-import SEO from "../components/seo";
+import SEO from '../components/seo';
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title='Home' />
     <Content />
   </Layout>
 );

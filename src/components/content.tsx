@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { SectionAbout, SectionResume, SectionWriting, SectionContact } from "./sections";
+import { SectionAbout, SectionResume, SectionWriting, SectionContact } from './sections';
 
 const Content: React.FC = () => {
   return (

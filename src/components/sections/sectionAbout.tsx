@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 // import PropTypes from "prop-types";
 // import Image from "../image";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import styled from "styled-components";
-import { theme, mixins } from "../../styles";
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import styled from 'styled-components';
+import { theme, mixins } from '../../styles';
 
 const Description = styled.div`
   display: inline-block;
@@ -49,7 +49,7 @@ const SectionAbout: React.FC = () => {
       }
     }`);
   return (
-    <SectionContainer id="about">
+    <SectionContainer id='about'>
       <Description>
         <h3>James Leong </h3>
         <p>Software Engineer | Stoic | Essentialist</p>

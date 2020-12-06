@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { theme, mixins } from "../../styles";
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import { theme, mixins } from '../../styles';
 
 const SectionContainer = styled.div`
  ${mixins.sectionContainer};
@@ -11,10 +11,10 @@ const SectionContainer = styled.div`
 
 const SectionResume: React.FC = () => {
   return (
-    <SectionContainer id="resume">
+    <SectionContainer id='resume'>
       <div>I&#39;m currently working at Dialpad</div>
       <div>
-        <Link to="/page-2/">Resume</Link>
+        <Link to='/page-2/'>Resume</Link>
       </div>
     </SectionContainer>
   );

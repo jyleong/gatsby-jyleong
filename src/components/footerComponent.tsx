@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 const LayoutFooter = styled.footer`
