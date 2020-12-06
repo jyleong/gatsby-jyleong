@@ -8,8 +8,8 @@ const SideBarContainer = styled.div`
   display: flex;
   left: 0;
   position: fixed;
-  margin-top: calc(100px + 7%);
-  transform: rotate(90deg) translateY(170px);
+  margin-top: calc(90px + 7%);
+  transform: rotate(90deg) translateY(80px);
   opacity: .5;
   color: ${theme.colors.primaryDark} ;
   z-index: 1000;

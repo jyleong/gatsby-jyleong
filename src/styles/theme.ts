@@ -8,7 +8,10 @@ const theme = {
 		primaryDark: '#565156',
 		primaryAccent: '#bfdbf7',
 		primaryBackground: '#f9f4f1',
-    secondaryBackground: '#f1f6f9',
+		secondaryBackground: '#f1f6f9',
+		contrast: '#111',
+    contrastLightest: '#dad9d9',
+    accent: 'red',
 
 		black: '#000000',
 
