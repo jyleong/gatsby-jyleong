@@ -44,6 +44,13 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       list-style: none;
     }
+    p {
+      padding: 0;
+      margin: 0;
+      font-family: ${fonts.main};
+      font-size: ${fontSizes.medium};
+      color: ${colors.primaryDark};
+    }
     h1, h2, h3, h4, h5 {
       padding: 0;
       margin: 0;

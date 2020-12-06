@@ -14,7 +14,7 @@ const SectionContainer = styled.div`
 const SectionWriting: React.FC = () => {
   return (
     <SectionContainer id="writing">
-      <h3>Selected Writings</h3>
+      <h3>Recent Writings</h3>
       {/* Blog list from GraphQL, recent 3 posts */}
       <div>
         <ul>
@@ -22,7 +22,7 @@ const SectionWriting: React.FC = () => {
         </ul>
       </div>
       <div>
-        <Link to="/page-2/">Writings</Link>
+        <Link to="/writings/">Writings</Link>
       </div>
     </SectionContainer>
   );

@@ -15,12 +15,18 @@ const Description = styled.div`
   }
 `;
 
-const HeadShotImage = styled.div`
+const ImageCover = styled.div`
   display: inline-block;
   margin: 0 25px 0 25px;
   width: 30%;
   height: 30%;
-  border-radius: 5px;
+`;
+
+const ImageItem = styled(Img)<{fluid: any}>`
+	padding: 0;
+  width: 100%;
+	height: 100%;
+	border-radius: ${theme.borderRadius};
 `;
 
 const SectionContainer = styled.div`
@@ -48,12 +54,11 @@ const SectionAbout: React.FC = () => {
         <h3>James Leong </h3>
         <p>Software Engineer | Stoic | Essentialist</p>
       </Description>
-      <HeadShotImage>
-        <Img 
+      <ImageCover>
+        <ImageItem 
           fluid={imgQuery.placeholderImage.childImageSharp.fluid}
-          imgStyle={{"border-radius": "50%;"}}
         />
-      </HeadShotImage>
+      </ImageCover>
     </SectionContainer>
   );
 };
