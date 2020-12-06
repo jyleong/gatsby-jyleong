@@ -2,13 +2,18 @@ import React from "react";
 import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 // import Image from "../image";
-import style from "./section.module.scss";
-
+import styled from "styled-components";
+import { theme, mixins } from "../../styles";
 // type WritingProps = {};
 
+const SectionContainer = styled.div`
+ ${mixins.sectionContainer};
+  background-color: ${theme.colors.primaryOffBeige2};
+  ${mixins.flexCenter};
+`;
 const SectionWriting: React.FC = () => {
   return (
-    <section id="writing" className={style.sectionWriting}>
+    <SectionContainer id="writing">
       <h3>Selected Writings</h3>
       {/* Blog list from GraphQL, recent 3 posts */}
       <div>
@@ -19,7 +24,7 @@ const SectionWriting: React.FC = () => {
       <div>
         <Link to="/page-2/">Writings</Link>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

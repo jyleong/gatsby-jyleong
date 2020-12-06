@@ -1,12 +1,19 @@
 import React from "react";
-import style from "./section.module.scss";
+import styled from "styled-components";
+import {mixins} from "../../styles";
+
+const SectionContainer = styled.div`
+  ${mixins.sectionContainer};
+  background-color: #f1f6f9;
+  text-align: center;
+`;
 
 const SectionContact: React.FC = () => {
   return (
-    <section id="contact" className={style.sectionContact}>
+    <SectionContainer id="contact">
       <div>Need a developer? Send me an email []</div>
       <div>Or follow me on the socials</div>
-    </section>
+    </SectionContainer>
   );
 };
 

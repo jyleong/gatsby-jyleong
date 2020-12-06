@@ -6,8 +6,6 @@
   </em>
   <br />
   <em>
-    ESLint + airbnb
-    · remark-lint
     · Prettier
   </em>
   <br />
@@ -17,7 +15,6 @@
     · Renovate
     · TypoCI
     · PWA-enabled
-    · Typography.js
   </em>
 </p>
 
@@ -40,12 +37,6 @@ Supports:
 - [Renovate](https://renovate.whitesourcesoftware.com/)
 - [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 - [PropTypes](https://github.com/facebook/prop-types)
-- [Typography.js](https://kyleamathews.github.io/typography.js/)
-- [ESLint](https://eslint.org/)
-- [Airbnb ESLint config](https://github.com/airbnb/javascript)
-- [Prettier support for ESLint](https://github.com/prettier/eslint-plugin-prettier)
-- [remark-lint](https://remark.js.org/)
-- [Husky](https://github.com/typicode/husky)
 - [TypoCI](https://typoci.com/)
 - [SCSS](https://sass-lang.com/)
 - [(S)CSS Modules](https://github.com/css-modules/css-modules)
@@ -67,16 +58,6 @@ Supports:
     ```shell
     # create a new Gatsby site using this starter
     $ gatsby new opinionated-project https://github.com/datacrafts-io/gatsby-opinionated-starter
-    ```
-
-1.  **Start developing.**
-
-    In order to run Gatsby dev server, navigate into your new site’s directory and start it up.
-
-    ```shell
-    $ cd opinionated-project/
-    $ npm i -D husky
-    $ npm run start
     ```
 
 ## 🎓 Learning Gatsby

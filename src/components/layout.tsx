@@ -8,15 +8,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby";
-
-import layoutStyle from "./layout.module.scss";
-import "normalize.css";
+import styled from 'styled-components';
 import Footer from "./footer";
 import Sidebar from "./sidebar";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
+
+const LayoutContainer = styled.div`
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+`;
+
+const LayoutFooter = styled.div`
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 50px;
+`;
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -33,10 +46,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div>
       <Sidebar />
       <div>
-        <div className={layoutStyle.layout}>{children}</div>
-        <div className={layoutStyle.layoutFooter}>
+        <LayoutContainer>{children}</LayoutContainer>
+        <LayoutFooter>
           <Footer />
-        </div>
+        </LayoutFooter>
       </div>
     </div>
   );

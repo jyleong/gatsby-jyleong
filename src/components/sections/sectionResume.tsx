@@ -1,15 +1,22 @@
 import React from "react";
 import { Link } from "gatsby";
-import style from "./section.module.scss";
+import styled from "styled-components";
+import { theme, mixins } from "../../styles";
+
+const SectionContainer = styled.div`
+ ${mixins.sectionContainer};
+  background-color: ${theme.colors.primaryOffBeige1};
+  ${mixins.flexCenter};
+`;
 
 const SectionResume: React.FC = () => {
   return (
-    <section id="resume" className={style.sectionResume}>
+    <SectionContainer id="resume">
       <div>I&#39;m currently working at Dialpad</div>
       <div>
         <Link to="/page-2/">Resume</Link>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
