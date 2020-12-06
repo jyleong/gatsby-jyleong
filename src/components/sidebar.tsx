@@ -10,7 +10,7 @@ const SideBarContainer = styled.div`
   position: fixed;
   margin-top: calc(100px + 7%);
   transform: rotate(90deg) translateY(170px);
-  opacity: 1;
+  opacity: .5;
   color: ${theme.colors.primaryDark} ;
   z-index: 1000;
 

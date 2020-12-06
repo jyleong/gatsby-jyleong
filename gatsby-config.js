@@ -3,6 +3,7 @@ module.exports = {
     title: "The Stoic SWE",
     description: "The slice of the internet belonging to James Leong",
     author: "James Leong",
+    siteUrl: "https://jyleong.github.io",
   },
   plugins: [
     "gatsby-transformer-sharp",

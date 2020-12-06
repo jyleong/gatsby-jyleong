@@ -8,7 +8,7 @@ import { theme, mixins } from "../../styles";
 
 const SectionContainer = styled.div`
  ${mixins.sectionContainer};
-  background-color: ${theme.colors.primaryOffBeige2};
+  background-color: ${theme.colors.secondaryBackground};
   ${mixins.flexCenter};
 `;
 const SectionWriting: React.FC = () => {

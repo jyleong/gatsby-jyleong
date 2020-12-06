@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {mixins} from "../../styles";
+import {theme, mixins} from "../../styles";
 
 const SectionContainer = styled.div`
   ${mixins.sectionContainer};
-  background-color: #f1f6f9;
+  background-color: ${theme.colors.secondaryBackground};
   text-align: center;
 `;
 

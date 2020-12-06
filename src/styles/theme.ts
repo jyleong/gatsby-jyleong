@@ -7,16 +7,11 @@ const theme = {
 		primaryGray: '#6f6870',
 		primaryDark: '#565156',
 		primaryAccent: '#bfdbf7',
-		primaryBackground: '#022b3a',
-    primaryBackgroundLight: '#193E4B',
-    primaryOffBeige1: '#f9f4f1',
-    primaryOffBeige2: '#f1f6f9', 
+		primaryBackground: '#f9f4f1',
+    secondaryBackground: '#f1f6f9',
 
 		black: '#000000',
 
-		//https://coolors.co/29648a-022b3a-bfdbf7-e1e5f2-ffffff
-		//https://coolors.co/29648a-37392e-28afb0-ddcecd-eee5e5
-		//https://coolors.co/29648a-000000-b8dbd9-f4f4f9-04724d
   },
   
   fonts: {

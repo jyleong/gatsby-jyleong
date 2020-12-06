@@ -5,7 +5,7 @@ import { theme, mixins } from "../../styles";
 
 const SectionContainer = styled.div`
  ${mixins.sectionContainer};
-  background-color: ${theme.colors.primaryOffBeige1};
+  background-color: ${theme.colors.primaryBackground};
   ${mixins.flexCenter};
 `;
 

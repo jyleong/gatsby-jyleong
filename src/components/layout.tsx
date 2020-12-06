@@ -8,8 +8,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby";
-import styled from 'styled-components';
-import Footer from "./footer";
+import styled from "styled-components";
+import Head from "./head";
+import FooterComponent from "./footerComponent";
 import Sidebar from "./sidebar";
 
 type LayoutProps = {
@@ -25,31 +26,15 @@ const LayoutContainer = styled.div`
   padding-left: 50px;
 `;
 
-const LayoutFooter = styled.div`
-  margin: 0 auto;
-  height: 100%;
-  padding-left: 50px;
-`;
-
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
 
   return (
-    <div>
+    <div id="root">
+      <Head />
       <Sidebar />
       <div>
         <LayoutContainer>{children}</LayoutContainer>
-        <LayoutFooter>
-          <Footer />
-        </LayoutFooter>
+        <FooterComponent/>
       </div>
     </div>
   );
