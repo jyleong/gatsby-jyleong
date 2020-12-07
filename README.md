@@ -1,22 +1,4 @@
-<h2 align="center">Opinionated Gatsby Starter</h2>
-
-<p align="center">
-  <em>
-    TypeScript
-  </em>
-  <br />
-  <em>
-    · Prettier
-  </em>
-  <br />
-  <em>
-    Netlify-ready
-    · GitHub Actions
-    · Renovate
-    · TypoCI
-    · PWA-enabled
-  </em>
-</p>
+<h2 align="center">Portfolio made with Gatsby</h2>
 
 <p align="center">
   <a href="https://github.com/datacrafts-io/gatsby-opinionated-starter/actions?query=workflow%3AMain+branch%3Amaster">
@@ -27,19 +9,16 @@
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
-### _Very_ opinionated starter for Gatsby
+### Slightly opinionated starter for [Gatsby](https://www.gatsbyjs.org/)
 
-This is a complex boilerplate for [Gatsby](https://www.gatsbyjs.org/).
 
 Supports:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Renovate](https://renovate.whitesourcesoftware.com/)
 - [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
-- [PropTypes](https://github.com/facebook/prop-types)
 - [TypoCI](https://typoci.com/)
-- [SCSS](https://sass-lang.com/)
-- [(S)CSS Modules](https://github.com/css-modules/css-modules)
+css-modules/css-modules)
 - [Netlify](https://www.netlify.com/)
 - [GitHub Actions CI](https://github.com/features/actions)
 
