@@ -3,23 +3,17 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby' 
 
 
+interface HeadProps {
+  title: string,
+  description: string,
+  siteUrl: string,
+  author?: string,
+}
 /*
 Can send this query down from layout when fully fleshed
 */
-const Head: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            author
-          }
-      }
-    }
-  `)
-  const { title, description, siteUrl } = data.site.siteMetadata;
+const Head: React.FC<HeadProps> = (props) => {
+  const { title, description, siteUrl } = props;
   return (
     <Helmet>
       <title>{title}</title>

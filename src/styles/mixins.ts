@@ -18,7 +18,7 @@ const mixins = {
 	`,
 
 	sectionContainer: css`
-		padding: 1rem;
+		padding: 0.8rem;
 		position: relative;
 		width: 100%;
 	`,

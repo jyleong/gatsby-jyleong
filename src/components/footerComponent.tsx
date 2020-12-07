@@ -9,18 +9,11 @@ const LayoutFooter = styled.footer`
   padding-left: 50px;
 `;
 
-const FooterComponent: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query SiteAuthorQuery {
-      site {
-        siteMetadata {
-          author
-        }
-      }
-    }
-  `);
+interface FooterProps {
+  author: string
+};
 
-  const { author } = data.site.siteMetadata;
+const FooterComponent: React.FC<FooterProps> = ({ author }) => {
   return <LayoutFooter>Built with ♥ by {author}, © {new Date().getFullYear()}</LayoutFooter>;
 };
 
