@@ -10,6 +10,17 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    "import/resolver": {
+      alias: [
+        "@components", "./src/components",
+        "@config", "./src/config",
+        "@blog", "./src/blog",
+        "@images", "./src/image",
+        "@template", "./src/templates",
+        "@pages", "./src/pages",
+        "@styles", "./src/styles",
+      ]
     }
   },
   env: {

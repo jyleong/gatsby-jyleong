@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import PropTypes from "prop-types";
-// import Image from "../image";
 import styled from 'styled-components';
 import { theme, mixins } from '../../styles';
 
@@ -42,9 +40,12 @@ const TitleH2 = styled.h2`
 
 const TitleH3 = styled.h3`
   text-align: center;
-  :hover {
-    text-decoration: underline
-  }
+  ${mixins.inlineLink};
+`;
+
+const WritingsLink = styled(Link)`
+  text-align: center;
+  ${mixins.inlineLink};
 `;
 
 const SectionWriting: React.FC<WritingListProps> = (props) => {
@@ -68,8 +69,8 @@ const SectionWriting: React.FC<WritingListProps> = (props) => {
           )
         })}
       </ListContainer>
-      {/* Blog list from GraphQL, recent 3 posts */}
-      <Link to='/writings/'>More writings</Link>
+
+      <WritingsLink to='/writings/'>More writing ➤</WritingsLink>
     </SectionContainer>
   );
 };

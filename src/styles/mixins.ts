@@ -40,29 +40,13 @@ const mixins = {
 		display: inline-block;
 		text-decoration: none;
 		text-decoration-skip-ink: auto;
-		position: relative;
 		transition: ${theme.transition};
 		cursor: pointer;
 		
 		&:hover,
 		&:focus,
 		&:active {
-			color: ${colors.primary};
-			outline: 0;
-			&:after {
-				width: 100%;
-			}
-		}
-		&:after {
-			content: '';
-			display: block;
-			width: 0;
-			height: 3px;
-			position: relative;
-			bottom: 0;
-			background-color: ${colors.primary};
-			transition: ${theme.transition};
-			opacity: 1.0;
+			text-decoration: underline
 		}
 	`,
 

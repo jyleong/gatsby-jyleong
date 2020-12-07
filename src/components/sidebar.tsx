@@ -1,8 +1,9 @@
-// import { Link } from "gatsby";
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import { theme, mixins } from '../styles';
+import config from '@config';
+import { theme, mixins } from '@styles';
 
 const SideBarContainer = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const SideBarContainer = styled.div`
   margin-top: calc(90px + 7%);
   transform: rotate(90deg) translateY(80px);
   opacity: .5;
-  color: ${theme.colors.primaryDark} ;
+  color: ${theme.colors.primaryDark};
   z-index: 1000;
 
   div {
@@ -33,19 +34,29 @@ const SideBarContainer = styled.div`
 
 const SideBarLink = styled.div`
   margin: 0 10px;
+  a {
+    color: ${theme.colors.primaryDark};
+  }
   :hover{
-    transition: 1s;
-    border-color: ${theme.colors.primaryDark};
-    border-bottom: 2px solid;
+    text-decoration: underline
   }
 `;
 const Sidebar: React.FC = () => {
+  const { navLinks } = config;
+  console.log(navLinks);
+
   return (
     <SideBarContainer>
-      <SideBarLink>Home</SideBarLink>
-      <SideBarLink>Writings</SideBarLink>
-      <SideBarLink>Resume</SideBarLink>
-      <SideBarLink>Contact</SideBarLink>
+      {
+        navLinks.map(({name, url}, index) => (
+          <SideBarLink key={index}>
+            <Link
+              to={url}
+            >{name}
+            </Link>
+          </SideBarLink>
+        ))
+      }
     </SideBarContainer>
   );
 };

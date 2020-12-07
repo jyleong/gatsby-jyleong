@@ -12,9 +12,7 @@ const TitleH1 = styled.h1`
 `;
 
 const TitleH3 = styled.h3`
-  :hover {
-    text-decoration: underline
-  }
+  ${mixins.inlineLink};
 `;
 
 

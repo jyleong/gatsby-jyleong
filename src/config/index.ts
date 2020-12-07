@@ -4,8 +4,8 @@ const config =  {
 
   navLinks: [
       {
-          name: 'About',
-          url: '/#about'
+          name: 'Home',
+          url: '/'
       },
       {
           name: 'Writings',
