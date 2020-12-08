@@ -10,8 +10,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Head from './head';
+import NavBar from './navbar';
 import FooterComponent from './footerComponent';
-import Sidebar from './sidebar';
 
 type SiteMetaProps = {
   title: string,
@@ -52,9 +52,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div id='root'>
       <Head title={title} description={description} siteUrl={siteUrl}/>
-      <Sidebar />
       <div>
-        <LayoutContainer>{children}</LayoutContainer>
+        <LayoutContainer>
+          <NavBar />
+          {children}
+        </LayoutContainer>
         <FooterComponent author={author}/>
       </div>
     </div>

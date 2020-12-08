@@ -8,7 +8,7 @@ const theme = {
 		primaryDark: '#565156',
 		primaryAccent: '#bfdbf7',
 		primaryBackground: '#f9f4f1',
-		secondaryBackground: '#f1f6f9',
+		secondaryBackground: '#a2d2f2',
 		contrast: '#111',
     contrastLightest: '#dad9d9',
     accent: 'red',
@@ -34,17 +34,11 @@ const theme = {
   
 	transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
   
-	borderRadius: '5px',
-	navHeight: '75px',
+	navHeight: '50px',
 	navScrollHeight: '70px',
-	margin: '20px',
-
+	
 	tabHeight: 42,
 	tabWidth: 120,
-	radius: 3,
-  
-	captionWidth: '90vw',
-	captionItemMargin: '0px',
 
 	fadeinOffset: 100,
 };

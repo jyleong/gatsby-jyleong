@@ -5,19 +5,15 @@ const config =  {
   navLinks: [
       {
           name: 'Home',
-          url: '/#about'
+          url: '/'
       },
       {
           name: 'Writings',
-          url: '/#writing'
+          url: '/writings/'
       },
       {
-          name: 'Resume',
-          url: '/#resume'
-      },
-      {
-          name: 'Contact',
-          url: '/#contact'
+          name: 'About',
+          url: '/page-2/'
       },
   ],
   socialMedia: [

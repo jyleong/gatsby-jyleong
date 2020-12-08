@@ -4,11 +4,35 @@ import theme from './theme';
 
 const { colors } = theme;
 
-const GlobalStyle = createGlobalStyle`
+const reset = () => `
   html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: ${theme.colors.contrastLightest};
+    color: rgba(0, 0, 0, 0.70);
+  }
+
+  a.anchor, a.anchor:hover, a.anchor:link {
+    background: none !important;
+  }
+`;
+
+const GlobalStyle = createGlobalStyle`
+  ${reset()}  
+  html {
     scroll-behavior: smooth;
     font-size: 18px;
     -ms-text-size-adjust: 100%;
@@ -22,11 +46,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100%;
-    overflow-x: hidden;
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 12.5%;
     background: ${theme.colors.primaryBackground};
     color: ${colors.primaryDark};
     font-family: font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
