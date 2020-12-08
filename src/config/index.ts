@@ -5,7 +5,7 @@ const config =  {
   navLinks: [
       {
           name: 'Home',
-          url: '/'
+          url: '/#about'
       },
       {
           name: 'Writings',
@@ -24,17 +24,14 @@ const config =  {
       {
           name: 'Github',
           url: 'https://github.com/jyleong',
-          icon: 'fa fa-github fa-lg'
       },
       {
           name: 'LinkedIn',
-          url: 'https://www.linkedin.com/in/james- leong-b30236ab/',
-          icon: 'fa fa-linkedin fa-lg'
+          url: 'https://www.linkedin.com/in/james-leong-b30236ab/',
       },
       {
           name: 'Instagram',
           url: 'https://www.instagram.com/',
-          icon: 'fa fa-instagram fa-lg'
       }
   ]
 };

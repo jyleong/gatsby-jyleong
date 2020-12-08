@@ -25,11 +25,8 @@ type LayoutProps = {
 
 const LayoutContainer = styled.div`
   margin: 0 auto;
-  min-height: 100vh;
-  height: 100%;
   width: 100%;
   height: 100%;
-  padding-left: 50px;
 `;
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {

@@ -30,8 +30,7 @@ const ImageItem = styled(Img)<{fluid: any}>`
 `;
 
 const SectionContainer = styled.div`
- ${mixins.sectionContainer};
-  background-color: ${theme.colors.primaryBackground};
+  ${mixins.sectionContainer};
   ${mixins.flexCenter};
 `;
 

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import theme from './theme';
 
-const { colors, fonts, fontSizes } = theme;
+const { colors } = theme;
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: ${fonts.main};
     font-size: 18px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -23,13 +22,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    width: 87.5%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     min-height: 100%;
     overflow-x: hidden;
-    background: ${colors.white};
+    background: ${theme.colors.primaryBackground};
     color: ${colors.primaryDark};
+    font-family: font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
     max-width: 1400px;
   }
 
@@ -82,8 +82,30 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 0.5rem;
     padding-right: 0;
     vertical-align: baseline;
-    font-family: ${fonts.main};
     color: ${colors.primaryDark};
+  }
+
+  code {
+    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.42;
+  }
+
+  h1 > code,
+  h2 > code,
+  h3 > code {
+    font-size: 0.8em;
+  }
+
+  pre.code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+  }
+
+  pre.code.fullwidth {
+    width: 90%;
   }
 
   blockquote {
@@ -101,11 +123,28 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  h1, h2, h3, h4, h5 {
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-    font-family: ${fonts.main};
+  h1 {
+    font-weight: 400;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+  
+  h2 {
+    font-weight: 400;
+    margin-top: 1.0rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+  
+  h3 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    line-height: 1;
   }
 
   figure {

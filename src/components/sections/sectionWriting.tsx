@@ -18,6 +18,7 @@ const SectionContainer = styled.div`
   background-color: ${theme.colors.secondaryBackground};
   ${mixins.flexCenter};
   display: grid;
+  border-radius: 5px;
 `;
 
 const ListContainer = styled.ul`

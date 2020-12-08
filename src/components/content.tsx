@@ -33,7 +33,6 @@ const Content: React.FC<ContentProps> = (props) => {
       <SectionAbout />
       <SectionWriting posts={posts}/>
       <SectionResume />
-      <SectionContact />
     </div>
   );
 };

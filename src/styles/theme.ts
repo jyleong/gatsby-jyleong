@@ -16,12 +16,6 @@ const theme = {
 		black: '#000000',
 
   },
-  
-  fonts: {
-    main: 'Playfair Display, serif',
-    code: 'Roboto Mono, monospace',
-  },
-	
 
 	fontSizes: {
 		xsmall: '10px',

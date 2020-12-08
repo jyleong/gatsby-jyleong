@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import { theme, mixins } from '../../styles';
 
 const SectionContainer = styled.div`
- ${mixins.sectionContainer};
-  background-color: ${theme.colors.primaryBackground};
+  ${mixins.sectionContainer};
   ${mixins.flexCenter};
 `;
 
