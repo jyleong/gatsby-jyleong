@@ -10,7 +10,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Head from './head';
-import NavBar from './navbar';
+import NavBar from './navbar/navbar';
 import FooterComponent from './footerComponent';
 
 type SiteMetaProps = {
