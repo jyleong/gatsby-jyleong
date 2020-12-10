@@ -21,15 +21,13 @@ const SectionContainer = styled.div`
   border-radius: 5px;
 `;
 
-const ListContainer = styled.ul`
+const ListContainer = styled.div`
   width: 100%;
   padding: 0.5rem;
 `;
 
 const BlogPostCard = styled.div`
-  width: 100%;
-  padding: 0.5rem;
-  position: inline-block;
+  ${mixins.divShadow};
 `;
 
 const TitleH2 = styled.h2`
@@ -40,7 +38,6 @@ const TitleH2 = styled.h2`
 `;
 
 const TitleH3 = styled.h3`
-  text-align: center;
   ${mixins.inlineLink};
 `;
 

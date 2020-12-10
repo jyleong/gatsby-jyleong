@@ -20,15 +20,12 @@ const BodyContainer = styled.div`
   ${mixins.flexCenter};
 `;
 
-const ListContainer = styled.ul`
+const ListContainer = styled.div`
   width: 70%;
 `;
 
 const BlogPostCard = styled.div`
-  width: 100%;
-  padding: 1rem;
-  position: inline-block;
-  background-color: ${theme.colors.primaryBackground};
+  ${mixins.divShadow};
 `;
 
 const Writings = () => {

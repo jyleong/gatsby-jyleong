@@ -147,7 +147,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-weight: 400;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 3.2rem;
     line-height: 1;
@@ -155,7 +155,7 @@ const GlobalStyle = createGlobalStyle`
   
   h2 {
     font-weight: 400;
-    margin-top: 1.0rem;
+    margin-top: 0.9rem;
     margin-bottom: 0.5rem;
     font-size: 2.2rem;
     line-height: 1;
@@ -164,7 +164,7 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-weight: 400;
     font-size: 1.7rem;
-    margin-top: 0.8rem;
+    margin-top: 0.7 rem;
     margin-bottom: 0.3rem;
     line-height: 1;
   }

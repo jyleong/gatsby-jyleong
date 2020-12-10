@@ -50,6 +50,20 @@ const mixins = {
 		}
 	`,
 
+	divShadow: css`
+		width: 100%;
+		margin: 0.3rem;
+		padding: 0.4rem;
+		position: inline-block;
+		border-radius: 5px;
+		box-shadow: 0px 7px 15px -3px var(--theme-ui-colors-shadow,rgba(64,87,253,0.3));
+		transition: ${theme.transition};
+		&:hover,
+		&:focus {
+			box-shadow: 0 8px 15px 5px var(--theme-ui-colors-shadow,rgba(64,87,253,0.3));
+		}
+	`,
+
 	boxShadow: css`
 		box-shadow: 0 4px 15px 0px ${colors.black};
 		transition: ${theme.transition};

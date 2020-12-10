@@ -9,6 +9,7 @@ const theme = {
 		primaryAccent: '#bfdbf7',
 		primaryBackground: '#f9f4f1',
 		secondaryBackground: '#a2d2f2',
+		reddish: '#FC5185',
 		contrast: '#111',
     contrastLightest: '#dad9d9',
     accent: 'red',
