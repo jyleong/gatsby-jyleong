@@ -10,6 +10,13 @@ const IndexPage: React.FC = () => {
   const pageQuery = useStaticQuery(graphql`
     query {
       allMarkdownRemark (
+        filter: { 
+          fields: {
+            slug: {
+              ne: "about"
+            }
+          }
+        }
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 4
       ) {

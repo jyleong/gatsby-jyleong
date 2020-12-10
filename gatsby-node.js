@@ -11,8 +11,8 @@ const path = require('path');
 
 exports.onCreateNode = ({node, actions}) => {
   const { createNodeField } = actions
-  if (node.internal.type == "MarkdownRemark") {
-    const slug = path.basename(node.fileAbsolutePath, ".md");
+  if (node.internal.type == 'MarkdownRemark') {
+    const slug = path.basename(node.fileAbsolutePath, '.md');
     createNodeField({
       node,
       name: 'slug',
@@ -23,9 +23,9 @@ exports.onCreateNode = ({node, actions}) => {
 
 exports.createPages = async ({ graphql, actions}) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve("./src/templates/blog.tsx");
-
-  // Returns a promise
+  const blogPostTemplate = path.resolve('./src/templates/blog.tsx');
+  const aboutTemplate = path.resolve('./src/templates/about.tsx')
+  
   const resp = await graphql(`
     query {
       allMarkdownRemark {
@@ -42,16 +42,25 @@ exports.createPages = async ({ graphql, actions}) => {
       }
     }
   `);
+
   resp.data.allMarkdownRemark.edges.forEach((edge) => {
     const date = edge.node.frontmatter.date;
-    const yr = date.split("-")[0];
-    createPage({
+    const yr = date.split('-')[0];
+    let pageObj = {
       // Path for this page — required
       path: `/blog/${yr}/${edge.node.fields.slug}`,
       component: blogPostTemplate,
       context: {
         slug: edge.node.fields.slug,
       },
-    });
+    }
+    if (edge.node.fields.slug === 'about') {
+      pageObj = {
+        ...pageObj,
+        path: '/about/',
+        component: aboutTemplate,
+      }
+    }
+    createPage(pageObj);
   });
 }

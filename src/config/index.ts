@@ -13,7 +13,7 @@ const config =  {
       },
       {
           name: 'About',
-          url: '/page-2/'
+          url: '/about/'
       },
   ],
   socialMedia: [
