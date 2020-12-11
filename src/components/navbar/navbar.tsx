@@ -51,7 +51,7 @@ const Hamburger = styled.div`
   transition: all .3s linear;
   align-self: center;
   position: relative;
-  transform: ${(props: OpenProps) => (props.open ? "rotate(-45deg)" : "inherit")};
+  transform: ${(props: OpenProps) => (props.open ? "inherit" : "rotate(-45deg)")};
 
   ::before,
   ::after {
@@ -65,13 +65,13 @@ const Hamburger = styled.div`
 
   ::before {
     transform: ${(props: OpenProps) =>
-      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+      props.open ? "rotate(0deg)": "rotate(-90deg) translate(-10px, 0px)"};
     top: -10px;
   }
 
   ::after {
-    opacity: ${(props: OpenProps) => (props.open ? "0" : "1")};
-    transform: ${(props: OpenProps) => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
+    opacity: ${(props: OpenProps) => (props.open ? "1" : "0")};
+    transform: ${(props: OpenProps) => (props.open ? "rotate(0deg)" : "rotate(90deg)")};
     top: 10px;
   }
 `
@@ -91,7 +91,7 @@ const Navbox = styled.div`
     background-color: ${colors.primaryBackground};
     transition: all 0.3s ease-in;
     top: 8vh;
-    left: ${(props: OpenProps) => (props.open ? "-100%" : "0")};
+    left: ${(props: OpenProps) => (props.open ? "0" : "-100%")};
   }
 `
 
