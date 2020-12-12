@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { mixins } from '@styles';
 
 export const query = graphql`
   query($slug: String!) {
@@ -41,8 +40,10 @@ const Blog: React.FC<PostProps> = (props: PostProps) => {
     <Layout>
       <SEO title='blogpost'/>
       {/* Blog content */}
-      <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-      <p>{props.data.markdownRemark.frontmatter.date}</p>
+      <BlogContent>
+        <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+        <p>{props.data.markdownRemark.frontmatter.date}</p>
+      </BlogContent>
       <BlogContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></BlogContent>
     </Layout>
   )

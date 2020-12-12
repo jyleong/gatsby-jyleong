@@ -21,6 +21,7 @@ type SiteMetaProps = {
 }
 type LayoutProps = {
   children: React.ReactNode;
+  location: Location;
 };
 
 const LayoutContainer = styled.div`
@@ -49,12 +50,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     author: layoutQuery.site.siteMetadata.author,
   }
   const { title, description, siteUrl, author} = props
+  const pathname = location.pathname ? location.pathname : '/';
+  console.log(pathname);
   return (
     <div id='root'>
       <Head title={title} description={description} siteUrl={siteUrl}/>
       <div>
         <LayoutContainer>
-          <NavBar />
+          <NavBar path={pathname}/>
           {children}
         </LayoutContainer>
         <FooterComponent author={author}/>

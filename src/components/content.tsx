@@ -1,7 +1,6 @@
-import { node } from 'prop-types';
 import React from 'react';
 
-import { SectionAbout, SectionResume, SectionWriting, SectionContact } from './sections';
+import { SectionAbout, SectionWriting } from './sections';
 
 interface IEdge {
   node: {
@@ -32,7 +31,6 @@ const Content: React.FC<ContentProps> = (props) => {
     <div>
       <SectionAbout />
       <SectionWriting posts={posts}/>
-      <SectionResume />
     </div>
   );
 };

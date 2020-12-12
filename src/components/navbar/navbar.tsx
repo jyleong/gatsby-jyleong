@@ -6,6 +6,10 @@ import Logo from './logo';
 
 const { colors } = theme;
 
+interface NavProps {
+  path: string
+};
+
 const NavContainer = styled.nav`
   height: 14vh;
   display: flex;
@@ -95,11 +99,12 @@ const Navbox = styled.div`
   }
 `
 
-const NavBar: React.FC = () => {
+const NavBar: React.FC<NavProps> = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const shouldShow = props.path !== '/';
   return (
     <NavContainer>
-      <Logo />
+      <Logo show={shouldShow}/>
       <Toggle
         onClick={() => setNavbarOpen(!navbarOpen)}
       >

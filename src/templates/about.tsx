@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -20,12 +21,20 @@ interface MdProps {
   }
 }
 
+// TODO: add reusme pdf section
+const AboutContent = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`;
+
 const About: React.FC<MdProps>  = (props) => {
   return (
     <Layout>
+      <AboutContent>
+        <h2>About me</h2>
+      </AboutContent>
       <SEO title='About'/>
-      <h2>About me</h2>
-      <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+      <AboutContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></AboutContent>
     </Layout>
   )
 }

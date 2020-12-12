@@ -16,7 +16,7 @@ module.exports = {
         "@components", "./src/components",
         "@config", "./src/config",
         "@blog", "./src/blog",
-        "@images", "./src/image",
+        "@assets", "./src/assets",
         "@template", "./src/templates",
         "@pages", "./src/pages",
         "@styles", "./src/styles",
