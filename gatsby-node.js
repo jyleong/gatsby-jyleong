@@ -21,11 +21,12 @@ exports.onCreateNode = ({node, actions}) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions}) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogPostTemplate = path.resolve('./src/templates/blog.tsx');
   const aboutTemplate = path.resolve('./src/templates/about.tsx')
-  
+  const writingsListTemplate = path.resolve('./src/templates/writings.tsx');
+
   const resp = await graphql(`
     query {
       allMarkdownRemark {
@@ -42,8 +43,25 @@ exports.createPages = async ({ graphql, actions}) => {
       }
     }
   `);
+  
+  const { edges } = resp.data.allMarkdownRemark;
+  const filteredBlogs = edges.filter((e) => e.node.fields.slug !== 'about');
+  const writingsPerPage = 10;
+  const numPages = Math.ceil(filteredBlogs.length / writingsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/writings` : `/writings/${i + 1}`,
+      component: writingsListTemplate,
+      context: {
+        limit: writingsPerPage,
+        skip: i * writingsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
 
-  resp.data.allMarkdownRemark.edges.forEach((edge) => {
+  edges.forEach((edge) => {
     const date = edge.node.frontmatter.date;
     const yr = date.split('-')[0];
     let pageObj = {
