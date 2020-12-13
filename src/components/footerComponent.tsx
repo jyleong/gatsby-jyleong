@@ -16,6 +16,7 @@ const LayoutFooter = styled.footer`
 const FooterDesc = styled.div`
   display: flex;
 `;
+
 interface FooterProps {
   author: string
 };

@@ -70,13 +70,19 @@ const Writings = () => {
             const slug = edge.node.fields.slug;
             const yr = date.split("-")[0];
             const blogPath = `/blog/${yr}/${slug}`;
+            let dateObj: Date;
+            let formattedDate: string = '';
+            if (date) {
+              dateObj = new Date(date);
+              formattedDate = dateObj.toDateString();
+            }
             return (
               <BlogPostCard key={id}>
                 <Link
                   to={blogPath}
                 >
                   <TitleH3>{title}</TitleH3>
-                  <p>{date}</p>
+                  <p>{formattedDate}</p>
                 </Link>
               </BlogPostCard>
             )

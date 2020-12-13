@@ -54,14 +54,20 @@ const SectionWriting: React.FC<WritingListProps> = (props) => {
         {props.posts.map((p) => {
           const { id, date, slug, title } = p;
           const yr = date.split("-")[0];
-              const blogPath = `/blog/${yr}/${slug}`;
+          const blogPath = `/blog/${yr}/${slug}`;
+          let dateObj: Date;
+          let formattedDate: string = '';
+          if (date) {
+            dateObj = new Date(date);
+            formattedDate = dateObj.toDateString();
+          }
           return (
             <BlogPostCard key={id}>
               <Link
                 to={blogPath}
               >
               <TitleH3>{title}</TitleH3>
-              <p>{date}</p>
+              <p>{formattedDate}</p>
               </Link>
             </BlogPostCard>
           )

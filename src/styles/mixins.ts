@@ -36,6 +36,13 @@ const mixins = {
 		opacity: 1;
 	`,
 
+	imageItem: css`
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	`,
+
 	inlineLink: css`
 		display: inline-block;
 		text-decoration: none;

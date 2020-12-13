@@ -19,17 +19,17 @@ const SocialItem = styled.div`
 `;
 
 const SocialLink = styled.a`
-    padding: 7px;
-    color: ${theme.colors.primaryGray};
-    display: flex;
-    transition: ${theme.transition};
-    font-size: ${theme.fontSizes.xxlarge};
-    ${media.thone`font-size: ${theme.fontSizes.xlarge};`};
-    &:hover,
-    &:focus {
-      transform: translateY(-5px);
-      color: ${theme.colors.primary};
-    }
+  padding: 7px;
+  color: ${theme.colors.primaryGray};
+  display: flex;
+  transition: ${theme.transition};
+  font-size: ${theme.fontSizes.xxlarge};
+  ${media.thone`font-size: ${theme.fontSizes.xlarge};`};
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    color: ${theme.colors.primary};
+  }
 `;
 
 const Social: React.FC = () => {

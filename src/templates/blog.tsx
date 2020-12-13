@@ -36,13 +36,20 @@ const BlogContent = styled.div`
 
 
 const Blog: React.FC<PostProps> = (props: PostProps) => {
+  let date: Date;
+  let formattedDate: string = '';
+  if (props.data.markdownRemark.frontmatter && props.data.markdownRemark.frontmatter.date) {
+    date = new Date(props.data.markdownRemark.frontmatter.date);
+    formattedDate = date.toDateString();
+  }
+
   return (
     <Layout>
       <SEO title='blogpost'/>
       {/* Blog content */}
       <BlogContent>
         <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-        <p>{props.data.markdownRemark.frontmatter.date}</p>
+        <p>{formattedDate}</p>
       </BlogContent>
       <BlogContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></BlogContent>
     </Layout>

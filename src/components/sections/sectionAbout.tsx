@@ -27,10 +27,7 @@ const ImageCover = styled.div`
 `;
 
 const ImageItem = styled(Img)<{fluid: any}>`
-	padding: 0;
-  width: 100%;
-	height: 100%;
-	border-radius: 50%;
+	${mixins.imageItem};
 `;
 
 const SectionContainer = styled.div`
