@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   
   const { edges } = resp.data.allMarkdownRemark;
-  const filteredBlogs = edges.filter((e) => e.node.fields.slug !== 'about');
+  const filteredBlogs = edges.filter((e) => (e.node.fields.slug !== 'about' && e.node.fields.slug !== 'resume'));
   const writingsPerPage = 10;
   const numPages = Math.ceil(filteredBlogs.length / writingsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -77,6 +77,13 @@ exports.createPages = async ({ graphql, actions }) => {
         ...pageObj,
         path: '/about/',
         component: aboutTemplate,
+      }
+    }
+    if (edge.node.fields.slug === 'resume') {
+      pageObj = {
+        ...pageObj,
+        path: '/resume/',
+        component: blogPostTemplate,
       }
     }
     createPage(pageObj);

@@ -18,7 +18,8 @@ interface MdProps {
     markdownRemark: {
       html: string
     }
-  }
+  };
+  location: any;
 }
 
 // TODO: add reusme pdf section
@@ -29,7 +30,7 @@ const AboutContent = styled.div`
 
 const About: React.FC<MdProps>  = (props) => {
   return (
-    <Layout>
+    <Layout location={props.location}>
       <AboutContent>
         <h2>About me</h2>
       </AboutContent>

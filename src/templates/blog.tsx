@@ -26,7 +26,8 @@ interface PostProps {
       }
       html: string
     }
-  }
+  };
+  location: any;
 }
 
 const BlogContent = styled.div`
@@ -44,7 +45,7 @@ const Blog: React.FC<PostProps> = (props: PostProps) => {
   }
 
   return (
-    <Layout>
+    <Layout location={props.location}>
       <SEO title='blogpost'/>
       {/* Blog content */}
       <BlogContent>

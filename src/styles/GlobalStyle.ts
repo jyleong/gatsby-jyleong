@@ -100,8 +100,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
     padding-right: 0;
     vertical-align: baseline;
     color: ${colors.primaryDark};
@@ -164,7 +164,15 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-weight: 400;
     font-size: 1.7rem;
-    margin-top: 0.7 rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    line-height: 1;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.3rem;
     line-height: 1;
   }

@@ -11,7 +11,7 @@ interface NavProps {
 };
 
 const NavContainer = styled.nav`
-  height: 14vh;
+  height: 12vh;
   display: flex;
   background-color: ${colors.secondaryBackground};
   position: relative;

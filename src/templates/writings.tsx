@@ -53,7 +53,8 @@ interface PageContextProps {
     skip: number;
     numPages: number;
     currentPage: number;
-  }
+  };
+  location: any;
 }
 
 const Writings: React.FC<PageContextProps> = (props) => {
@@ -65,13 +66,12 @@ const Writings: React.FC<PageContextProps> = (props) => {
   const nextPage = `/writings${(currentPage + 1).toString()}`;
   const posts = data.allMarkdownRemark.edges;
   return (
-    <Layout>
+    <Layout location={props.location}>
       <SEO title="List of blog posts" />
       <TitleH1>All blog posts</TitleH1>
       <BodyContainer>
         <ListContainer>
           {posts.map((edge: any) => {
-            console.log(edge);
             const { title, date } = edge.node && edge.node.frontmatter;
             const id = edge.node.id;
             const slug = edge.node.fields.slug;
@@ -133,7 +133,7 @@ export const writingsListQuery = graphql`
         filter: { 
           fields: {
             slug: {
-              ne: "about"
+              nin: ["about", "resume"]
             }
           }
         }

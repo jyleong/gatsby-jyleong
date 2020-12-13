@@ -6,14 +6,14 @@ import Content from '../components/content';
 import SEO from '../components/seo';
 
 
-const IndexPage: React.FC = () => {
+const IndexPage: React.FC = (props: any) => {
   const pageQuery = useStaticQuery(graphql`
     query {
       allMarkdownRemark (
         filter: { 
           fields: {
             slug: {
-              ne: "about"
+              nin: ["about", "resume"]
             }
           }
         }
@@ -35,9 +35,10 @@ const IndexPage: React.FC = () => {
       }
     }
   `);
+  const { location } = props;
   const { edges } = pageQuery.allMarkdownRemark;
   return(
-    <Layout>
+    <Layout location={location}>
       <SEO title='Home' />
       <Content iEdge={edges}/>
     </Layout>

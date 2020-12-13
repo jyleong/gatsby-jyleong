@@ -35,7 +35,12 @@ const NavLinks: React.FC = () => {
     <>
       {navLinks &&
         navLinks.map(({ name, url }, idx) => (
-          <NavLink to={url}>{name}</NavLink>
+          <NavLink 
+            key={idx}
+            to={url}
+          >
+            {name}
+          </NavLink>
         ))
       }
     </>

@@ -7,7 +7,6 @@
 
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Head from './head';
 import NavBar from './navbar/navbar';
@@ -22,6 +21,7 @@ type SiteMetaProps = {
 
 type LayoutProps = {
   children: React.ReactNode;
+  location: any;
 };
 
 const LayoutContainer = styled.div`
@@ -30,7 +30,7 @@ const LayoutContainer = styled.div`
   height: 100%;
 `;
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   const layoutQuery = useStaticQuery(graphql`
     query {
       site {
@@ -49,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     siteUrl: layoutQuery.site.siteMetadata.siteUrl,
     author: layoutQuery.site.siteMetadata.author,
   }
-  const { title, description, siteUrl, author} = props
+  const { title, description, siteUrl, author } = props
   const pathname = location.pathname ? location.pathname : '/';
   return (
     <div id='root'>
@@ -63,10 +63,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
     </div>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

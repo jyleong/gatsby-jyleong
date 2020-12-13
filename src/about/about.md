@@ -16,6 +16,6 @@ Going by these practices I try to be a more intentional, insightful, introspecti
 
 ### Contact Me
 
-If you're a recruiter or just simply lookig to connect I can be reached email at [james.leong94@gmail.com](mailto:james.leong94@gmail.com)! Here is a copy of a traditional looking [resume](../assets/JYLResume.pdf).
+If you're a recruiter or just simply lookig to connect I can be reached email at [james.leong94@gmail.com](mailto:james.leong94@gmail.com)! Or you can take a look at my [resume](/resume/).
 
 Perhaps we could work together! Discuss random ideas, ask questions around coding, Software Engineering or simply to connect. :)
