@@ -1,6 +1,6 @@
 ---
 title: "Autonomy and Accountability"
-date: "2017-10-240"
+date: "2017-10-24"
 author: "James Leong"
 ---
 
