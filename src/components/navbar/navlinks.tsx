@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import config from '@config';
 import styled from 'styled-components';
-import { mixins } from '@styles';
+import { mixins, theme } from '@styles';
 
 const NavLink = styled(Link)`
   ${mixins.inlineLink};
@@ -17,7 +17,6 @@ const NavLink = styled(Link)`
     left: 0;
     right: 0;
     width: 0%;
-    content: ".";
     height: 1px;
     transition: all 0.4s ease-in;
   }

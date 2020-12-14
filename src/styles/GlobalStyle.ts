@@ -46,12 +46,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    width: 85%;
     margin: 0 auto;
-    padding-left: 12.5%;
     background: ${theme.colors.primaryBackground};
     color: ${colors.primaryDark};
-    font-family: font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
     max-width: 1400px;
   }
 
@@ -77,7 +75,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
-    color: ${colors.linkOrange};
+    color: ${colors.linkDefault};
     text-decoration: none;
     text-decoration-skip-ink: none;
   }

@@ -39,11 +39,13 @@ const TitleH2 = styled.h2`
 
 const TitleH3 = styled.h3`
   ${mixins.inlineLink};
+  colors: ${theme.colors.linkPrimary};
 `;
 
 const WritingsLink = styled(Link)`
   text-align: center;
   ${mixins.inlineLink};
+  colors: ${theme.colors.linkPrimary};
 `;
 
 const SectionWriting: React.FC<WritingListProps> = (props) => {

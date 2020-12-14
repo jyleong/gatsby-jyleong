@@ -11,7 +11,7 @@ interface NavProps {
 };
 
 const NavContainer = styled.nav`
-  height: 12vh;
+  height: 11vh;
   display: flex;
   background-color: ${colors.secondaryBackground};
   position: relative;
@@ -25,11 +25,7 @@ const NavContainer = styled.nav`
 
   @media (max-width: 768px) {
     position: sticky;
-    height: 8vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
+    height: 12vh;
   }
 `;
 
