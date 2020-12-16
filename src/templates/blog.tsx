@@ -12,6 +12,9 @@ export const query = graphql`
         title
         date
       }
+      fields {
+        slug
+      }
       html
     }
   }
@@ -23,6 +26,9 @@ interface PostProps {
       frontmatter: {
         title?: string,
         date?: string,
+      }
+      fields: {
+        slug: string,
       }
       html: string
     }
@@ -43,14 +49,15 @@ const Blog: React.FC<PostProps> = (props: PostProps) => {
     date = new Date(props.data.markdownRemark.frontmatter.date);
     formattedDate = date.toDateString();
   }
-
+  const { title } = props.data.markdownRemark.frontmatter;
+  const { slug } = props.data.markdownRemark.fields;
   return (
     <Layout location={props.location}>
-      <SEO title='blogpost'/>
+      <SEO title={title}/>
       {/* Blog content */}
       <BlogContent>
-        <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-        <p>{formattedDate}</p>
+        <h2>{title}</h2>
+        {slug !== 'resume' && <p>{formattedDate}</p>}
       </BlogContent>
       <BlogContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></BlogContent>
     </Layout>

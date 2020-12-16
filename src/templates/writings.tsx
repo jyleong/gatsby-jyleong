@@ -63,7 +63,7 @@ const Writings: React.FC<PageContextProps> = (props) => {
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/writings' : `/writings/${(currentPage - 1).toString()}`;
-  const nextPage = `/writings${(currentPage + 1).toString()}`;
+  const nextPage = `/writings/${(currentPage + 1).toString()}`;
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout location={props.location}>

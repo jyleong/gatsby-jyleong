@@ -2,15 +2,19 @@ const theme = {
 	colors: {
 
 		white: '#FFFFFF',
-		linkPrimary: '#f4f1de',
+		
 		linkDefault: '#e07a5f',
-		linkSecondary: '#e07a5f',
+		
 		primary: '#2E9CCA',
 		primaryGray: '#6f6870',
 		primaryDark: '#565156',
 		primaryAccent: '#bfdbf7',
+		
 		primaryBackground: '#f4f1de',
 		secondaryBackground: '#f2cc8f',
+		primaryBackgroundDark: '#118ab2',
+		secondaryBackgroundDark: '#073b4c',
+
 		contrast: '#111',
     contrastLightest: '#dad9d9',
     accent: 'red',
