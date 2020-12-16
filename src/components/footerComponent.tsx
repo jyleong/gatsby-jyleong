@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { mixins } from '@styles';
 import Social from './social';
-import ThemeToggle from './themeToggle';
 
 const LayoutFooter = styled.footer`
   margin: 0 auto;
@@ -28,7 +27,6 @@ const FooterComponent: React.FC<FooterProps> = ({ author }) => {
       <FooterDesc>
         Built with ♥ by {author}, © {new Date().getFullYear()}
       </FooterDesc>
-      <ThemeToggle />
     </LayoutFooter>
     );
 };

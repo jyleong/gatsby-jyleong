@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { theme as ThemeStyle } from '@styles';
 import NavLinks from './navlinks';
 import Logo from './logo';
+import ThemeToggle from '../themeToggle';
 import { ThemeContext } from '../../context/theme';
 
 const { colors } = ThemeStyle ;
@@ -82,6 +83,7 @@ const Navbox = styled.div`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  background-color: ${(props) => props.theme === 'dark' ? colors.secondaryBackgroundDark : colors.secondaryBackground };
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -108,10 +110,10 @@ const NavBar: React.FC<NavProps> = (props) => {
         {navbarOpen ? <Hamburger open={false}/> : <Hamburger open />}
       </Toggle>
       
-      <Navbox open={navbarOpen}>
+      <Navbox open={navbarOpen} theme={theme}>
         <NavLinks />
+        <ThemeToggle />
       </Navbox>
-      
     </NavContainer>
   );
 };
