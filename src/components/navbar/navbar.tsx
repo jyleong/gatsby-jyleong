@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-import { theme } from '@styles';
+import { theme as ThemeStyle } from '@styles';
 import NavLinks from './navlinks';
 import Logo from './logo';
+import ThemeToggle from '../themeToggle';
+import { ThemeContext } from '../../context/theme';
 
-const { colors } = theme;
+const { colors } = ThemeStyle ;
 
 interface NavProps {
   path: string
@@ -13,7 +15,7 @@ interface NavProps {
 const NavContainer = styled.nav`
   height: 11vh;
   display: flex;
-  background-color: ${colors.secondaryBackground};
+  background-color: ${(props) => props.theme === 'dark' ? colors.secondaryBackgroundDark : colors.secondaryBackground };
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
@@ -81,6 +83,7 @@ const Navbox = styled.div`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  background-color: ${(props) => props.theme === 'dark' ? colors.secondaryBackgroundDark : colors.secondaryBackground };
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -88,7 +91,6 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: ${colors.primaryBackground};
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${(props: OpenProps) => (props.open ? "0" : "-100%")};
@@ -96,10 +98,11 @@ const Navbox = styled.div`
 `
 
 const NavBar: React.FC<NavProps> = (props) => {
+  const { theme } = useContext(ThemeContext);
   const [navbarOpen, setNavbarOpen] = useState(false);
   const shouldShow = props.path !== '/';
   return (
-    <NavContainer>
+    <NavContainer theme={theme}>
       <Logo show={shouldShow}/>
       <Toggle
         onClick={() => setNavbarOpen(!navbarOpen)}
@@ -107,10 +110,10 @@ const NavBar: React.FC<NavProps> = (props) => {
         {navbarOpen ? <Hamburger open={false}/> : <Hamburger open />}
       </Toggle>
       
-      <Navbox open={navbarOpen}>
+      <Navbox open={navbarOpen} theme={theme}>
         <NavLinks />
+        <ThemeToggle />
       </Navbox>
-      
     </NavContainer>
   );
 };

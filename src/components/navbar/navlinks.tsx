@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import config from '@config';
 import styled from 'styled-components';
-import { mixins, theme } from '@styles';
+import { mixins } from '@styles';
 
 const NavLink = styled(Link)`
   ${mixins.inlineLink};

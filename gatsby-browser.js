@@ -1,12 +1,3 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import theme from "./src/styles/theme";
-import GlobalStyle from "./src/styles/GlobalStyle";
+const ThemeContext = require('./src/context/theme/index.tsx');
 
-
-export const wrapRootElement = ({element}) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    {element}
-  </ThemeProvider>
-);
+export const wrapRootElement = ThemeContext.ThemeWrapper;

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { theme, mixins } from '../../styles';
+import { theme as ThemeStyle, mixins } from '../../styles';
+import { ThemeContext } from '../../context/theme';
 
 interface BlogPost {
   title: string,
@@ -12,10 +13,11 @@ interface BlogPost {
 interface WritingListProps {
   posts: BlogPost[]
 }
+const { colors } = ThemeStyle;
 
 const SectionContainer = styled.div`
   ${mixins.sectionContainer};
-  background-color: ${theme.colors.secondaryBackground};
+  background-color: ${(props) => props.theme === 'dark' ? colors.secondaryBackgroundDark : colors.secondaryBackground };
   ${mixins.flexCenter};
   display: grid;
   border-radius: 5px;
@@ -47,8 +49,9 @@ const WritingsLink = styled(Link)`
 `;
 
 const SectionWriting: React.FC<WritingListProps> = (props) => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <SectionContainer id='writing'>
+    <SectionContainer id='writing' theme={theme}>
       <TitleH2>Recent Writings</TitleH2>
       <ListContainer>
         {props.posts.map((p) => {
