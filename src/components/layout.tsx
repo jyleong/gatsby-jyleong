@@ -11,18 +11,7 @@ import styled from 'styled-components';
 import Head from './head';
 import NavBar from './navbar/navbar';
 import FooterComponent from './footerComponent';
-
-type SiteMetaProps = {
-  title: string,
-  description: string,
-  siteUrl: string,
-  author: string,
-}
-
-type LayoutProps = {
-  children: React.ReactNode;
-  location: any;
-};
+import { SiteMetaProps, LayoutProps } from '../types';
 
 const LayoutContainer = styled.div`
   margin: 0 auto;

@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { mixins } from '@styles';
 import Social from './social';
+import { FooterProps } from '../types';
 
 const LayoutFooter = styled.footer`
   margin: 0 auto;
@@ -15,10 +16,6 @@ const LayoutFooter = styled.footer`
 const FooterDesc = styled.div`
   display: flex;
 `;
-
-interface FooterProps {
-  author: string
-};
 
 const FooterComponent: React.FC<FooterProps> = ({ author }) => {
   return (

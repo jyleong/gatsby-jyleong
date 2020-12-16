@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { mixins } from '@styles';
+import { LogoProps } from '../../types';
 
 const LogoWrap = styled.div`
   margin: auto 0;
@@ -16,10 +17,6 @@ const LogoWrap = styled.div`
 const ImageItem = styled(Img)<{fluid: any}>`
   ${mixins.imageItem};
 `;
-
-interface LogoProps {
-  show: boolean
-};
 
 const Logo: React.FC<LogoProps> = (props) => {
   const data = useStaticQuery(graphql`

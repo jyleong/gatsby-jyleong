@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { MdProps } from '../types';
 
 export const query = graphql`
   query {
@@ -13,16 +14,6 @@ export const query = graphql`
   }
 `;
 
-interface MdProps {
-  data: {
-    markdownRemark: {
-      html: string
-    }
-  };
-  location: any;
-}
-
-// TODO: add reusme pdf section
 const AboutContent = styled.div`
   width: 80%;
   margin: 0 auto;

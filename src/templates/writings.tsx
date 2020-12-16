@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { theme, mixins } from "../styles";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { theme, mixins } from '../styles';
+import { PageContextProps } from '../types';
 
 const TitleH1 = styled.h1`
   text-align: center;
@@ -45,17 +45,6 @@ const NavNumberedListLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-
-interface PageContextProps {
-  data: any;
-  pageContext: {
-    limit: number;
-    skip: number;
-    numPages: number;
-    currentPage: number;
-  };
-  location: any;
-}
 
 const Writings: React.FC<PageContextProps> = (props) => {
   const { data } = props;

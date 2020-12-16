@@ -1,22 +1,8 @@
 import React from 'react';
 
 import { SectionAbout, SectionWriting } from './sections';
+import { ContentProps } from '../types';
 
-interface IEdge {
-  node: {
-    id: string,
-    frontmatter: {
-      title: string,
-      date: string,
-    }
-    fields: {
-      slug: string,
-    }
-  }
-}
-interface ContentProps {
-  iEdge: IEdge[]
-}
 const Content: React.FC<ContentProps> = (props) => {
   const { iEdge } = props;
   const posts = iEdge.map(edge => {

@@ -1,14 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby' 
+import { HeadProps } from '../types';
 
-
-interface HeadProps {
-  title: string,
-  description: string,
-  siteUrl: string,
-  author?: string,
-}
 /*
 Can send this query down from layout when fully fleshed
 */
@@ -19,7 +12,6 @@ const Head: React.FC<HeadProps> = (props) => {
       <title>{title}</title>
       <meta name='description' content={description} />
       <link rel='canonical' href={siteUrl} />
-
 
       <meta property='og:url' content={siteUrl} />
       <meta property='og:title' content={title} />

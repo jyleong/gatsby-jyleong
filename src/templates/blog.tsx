@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { PostProps } from '../types';
 
 export const query = graphql`
   query($slug: String!) {
@@ -20,27 +21,10 @@ export const query = graphql`
   }
 `;
 
-interface PostProps {
-  data: {
-    markdownRemark: {
-      frontmatter: {
-        title?: string,
-        date?: string,
-      }
-      fields: {
-        slug: string,
-      }
-      html: string
-    }
-  };
-  location: any;
-}
-
 const BlogContent = styled.div`
   width: 80%;
   margin: 0 auto;
 `;
-
 
 const Blog: React.FC<PostProps> = (props: PostProps) => {
   let date: Date;

@@ -5,12 +5,9 @@ import NavLinks from './navlinks';
 import Logo from './logo';
 import ThemeToggle from '../themeToggle';
 import { ThemeContext } from '../../context/theme';
+import { NavProps, OpenProps } from '../../types';
 
 const { colors } = ThemeStyle ;
-
-interface NavProps {
-  path: string
-};
 
 const NavContainer = styled.nav`
   height: 11vh;
@@ -41,10 +38,6 @@ const Toggle = styled.div`
     display: flex;
   }
 `;
-
-interface OpenProps {
-  open: boolean;
-};
 
 const Hamburger = styled.div`
   background-color: #111;

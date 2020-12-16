@@ -3,16 +3,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { theme as ThemeStyle, mixins } from '../../styles';
 import { ThemeContext } from '../../context/theme';
+import { WritingListProps } from '../../types';
 
-interface BlogPost {
-  title: string,
-  date: string,
-  id: string,
-  slug: string,
-}
-interface WritingListProps {
-  posts: BlogPost[]
-}
 const { colors } = ThemeStyle;
 
 const SectionContainer = styled.div`
