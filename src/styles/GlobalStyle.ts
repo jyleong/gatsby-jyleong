@@ -21,7 +21,7 @@ const reset = () => `
   }
 
   ::selection {
-    background-color: ${theme.colors.contrastLightest};
+    background-color: ${colors.contrastLightest};
     color: rgba(0, 0, 0, 0.70);
   }
 
@@ -47,8 +47,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0 auto;
-    background: ${theme.colors.primaryBackground};
-    color: ${colors.primaryDark};
+    background: ${(props) => props.theme === 'dark' ? colors.primaryBackgroundDark : colors.primaryBackground};
+    color: ${(props) => props.theme === 'dark' ? colors.white : colors.primaryDark};
     font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
     max-width: 1400px;
   }
@@ -102,7 +102,7 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 0.4rem;
     padding-right: 0;
     vertical-align: baseline;
-    color: ${colors.primaryDark};
+    color: ${(props) => props.theme === 'dark' ? colors.white : colors.primaryDark};
   }
 
   code {
