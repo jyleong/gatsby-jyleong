@@ -1,9 +1,8 @@
-import React, { FC, useContext } from 'react';
+import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { ThemeContext } from '../context/theme';
-import { TagProps } from '../types';
+import { TagProps } from '@types';
 import {
   BodyContainer,
   ListContainer,

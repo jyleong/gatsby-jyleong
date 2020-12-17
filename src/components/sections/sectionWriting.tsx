@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { theme as ThemeStyle, mixins } from '../../styles';
+import { theme as ThemeStyle, mixins } from '@styles';
 import { ThemeContext } from '../../context/theme';
-import { WritingListProps } from '../../types';
+import { WritingListProps } from '@types';
 import TagDivs from '../../components/shared/tags';
 import {
   BlogPostCard,

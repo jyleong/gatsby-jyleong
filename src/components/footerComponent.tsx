@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { mixins } from '@styles';
 import Social from './social';
-import { FooterProps } from '../types';
+import { FooterProps } from '@types';
 
 const LayoutFooter = styled.footer`
   margin: 0 auto;

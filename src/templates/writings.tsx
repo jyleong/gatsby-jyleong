@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { ThemeContext } from '../context/theme';
-import { PageContextProps } from '../types';
+import { PageContextProps } from '@types';
 import TagDivs from '../components/shared/tags';
 import { 
   BodyContainer,

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SectionAbout, SectionWriting } from './sections';
-import { ContentProps } from '../types';
+import { ContentProps } from '@types';
 
 const Content: React.FC<ContentProps> = (props) => {
   const { iEdge } = props;

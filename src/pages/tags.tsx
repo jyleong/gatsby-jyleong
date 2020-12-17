@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { theme as ThemeStyle } from '@styles';
 import { ThemeContext } from '../context/theme';
-import { TagsPageProps } from '../types';
+import { TagsPageProps } from '@types';
 import {
   BodyContainer,
   ListContainer,

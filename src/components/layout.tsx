@@ -11,7 +11,7 @@ import styled from 'styled-components';
 import Head from './head';
 import NavBar from './navbar/navbar';
 import FooterComponent from './footerComponent';
-import { SiteMetaProps, LayoutProps } from '../types';
+import { SiteMetaProps, LayoutProps } from '@types';
 
 const LayoutContainer = styled.div`
   margin: 0 auto;

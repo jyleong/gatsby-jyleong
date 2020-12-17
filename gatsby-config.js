@@ -81,6 +81,7 @@ module.exports = {
           '@styles': 'src/styles',
           '@templates': 'src/templates',
           '@blog': 'src/blogs',
+          '@types': 'src/types',
         },
         extensions: [
           'ts', 'tsx',

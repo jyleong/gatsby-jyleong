@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
-import { HeadProps } from '../types';
+import { HeadProps } from '@types';
 
 /*
 Can send this query down from layout when fully fleshed
