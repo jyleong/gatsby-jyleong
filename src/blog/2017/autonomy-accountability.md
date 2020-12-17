@@ -2,7 +2,7 @@
 title: "Autonomy and Accountability"
 date: "2017-10-24"
 author: "James Leong"
-tags: ["wisdon", "self-development"]
+tags: ["wisdom", "self-development"]
 ---
 
 Grow's company motto: "You deserve autonomy, you owe accountability".

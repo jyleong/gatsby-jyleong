@@ -2,7 +2,7 @@
 title: "Overlap of Stoicism and Minimalism"
 date: "2020-01-11"
 author: "James Leong"
-tags: ["stocism", "minimalism", "journals"]
+tags: ["stoicism", "minimalism", "journals"]
 ---
 
 This is still in my early phases of exploring Stoicism and Minimalism. In fact I've only read through _Meditations_ by Marcus Aurelius once very briefly.

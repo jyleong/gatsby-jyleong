@@ -3,33 +3,16 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { theme as ThemeStyle, mixins } from '../styles';
 import { ThemeContext } from '../context/theme';
 import { PageContextProps } from '../types';
 import TagDivs from '../components/shared/tags';
-
-const { colors } = ThemeStyle;
-
-const TitleH1 = styled.h1`
-  text-align: center;
-  font-size: ${ThemeStyle.fontSizes.xlarge};
-`;
-
-const TitleH3 = styled.h3`
-  ${mixins.inlineLink};
-`;
-
-const BodyContainer = styled.div`
-  ${mixins.flexCenter};
-`;
-
-const ListContainer = styled.div`
-  width: 70%;
-`;
-
-const BlogPostCard = styled.div`
-  ${mixins.divShadow};
-`;
+import { 
+  BodyContainer,
+  ListContainer,
+  BlogPostCard,
+  TitleH3,
+  TitleH3Link
+} from '../components/shared/sharedStyles';
 
 const NumberedList = styled.ul`
   display: flex;
@@ -61,7 +44,7 @@ const Writings: React.FC<PageContextProps> = (props) => {
   return (
     <Layout location={props.location}>
       <SEO title="List of blog posts" />
-      <TitleH1>All blog posts</TitleH1>
+      <TitleH3>All blog posts</TitleH3>
       <BodyContainer>
         <ListContainer>
           {posts.map((edge: any) => {
@@ -70,10 +53,9 @@ const Writings: React.FC<PageContextProps> = (props) => {
             const slug = edge.node.fields.slug;
             const yr = date.split("-")[0];
             const blogPath = `/blog/${yr}/${slug}`;
-            let dateObj: Date;
             let formattedDate: string = '';
             if (date) {
-              dateObj = new Date(date);
+              const dateObj = new Date(date);
               formattedDate = dateObj.toDateString();
             }
             return (
@@ -81,7 +63,7 @@ const Writings: React.FC<PageContextProps> = (props) => {
                 <Link
                   to={blogPath}
                 >
-                  <TitleH3>{title}</TitleH3>
+                  <TitleH3Link>{title}</TitleH3Link>
                   <p>{formattedDate}</p>
                   <TagDivs tags={tags} theme={theme}/>
                 </Link>

@@ -25,8 +25,21 @@ export interface OpenProps {
   open: boolean;
 };
 
-// Content props
+
 export interface IEdge {
+  node: {
+    frontmatter: {
+      title: string,
+      date: string,
+    }
+    fields: {
+      slug: string,
+    }
+  }
+};
+
+// Content props
+export interface IContentEdge extends IEdge {
   node: {
     id: string,
     frontmatter: {
@@ -41,7 +54,7 @@ export interface IEdge {
 };
 
 export interface ContentProps {
-  iEdge: IEdge[];
+  iEdge: IContentEdge[];
 };
 
 // Footer props
@@ -95,7 +108,7 @@ export interface PostProps extends MdProps {
     }
   };
   location: any;
-}
+};
 
 // writings pagecontent props
 export interface PageContextProps {
@@ -105,6 +118,33 @@ export interface PageContextProps {
     skip: number;
     numPages: number;
     currentPage: number;
+  };
+  location: any;
+};
+
+export interface TagProps {
+  pageContext: {
+    tag: string;
+  };
+  data: {
+    allMarkdownRemark: {
+      totalCount: number;
+      edges: IEdge[];
+    }
+  };
+  location: any;
+}
+
+export interface TagsPageProps {
+  data: {
+    allMarkdownRemark: {
+      group: any[];
+    }
+    site: {
+      siteMetadata: {
+        title: string;
+      }
+    }
   };
   location: any;
 }
