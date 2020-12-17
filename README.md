@@ -1,43 +1,52 @@
-<h2 align="center">Portfolio made with Gatsby</h2>
+<h2 align="center">My Portfolio and blog made with Gatsby</h2>
 
-<p align="center">
-  <a href="https://github.com/datacrafts-io/gatsby-opinionated-starter/actions?query=workflow%3AMain+branch%3Amaster">
-    <img alt="Github Actions Build Status" src="https://img.shields.io/github/workflow/status/datacrafts-io/gatsby-opinionated-starter/Main?label=Build&style=flat-square"></a>    
+<p align="center">   
   <a href="https://www.npmjs.com/package/gatsby-opinionated-starter">
     <img alt="npm version" src="https://img.shields.io/npm/v/gatsby-opinionated-starter.svg?style=flat-square"></a>
   <a href="https://github.com/prettier/prettier">
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
-### Slightly opinionated starter for [Gatsby](https://www.gatsbyjs.org/)
+[Gatsby](https://www.gatsbyjs.org/)
 
+Deployed on github pages:
+[Live site](https://jyleong.github.io)
 
 Supports:
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Renovate](https://renovate.whitesourcesoftware.com/)
-- [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
-- [TypoCI](https://typoci.com/)
-css-modules/css-modules)
+- [Styled Components](https://styled-components.com/)
 - [Netlify](https://www.netlify.com/)
 - [GitHub Actions CI](https://github.com/features/actions)
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+**To inherit from the same start I did...**
 
-    Firstly, you need to install Gatsby CLI on your machine:
+Firstly, you need to install Gatsby CLI on your machine:
 
-    ```shell
-    $ npm i -g gatsby-cli
-    ```
+```shell
+$ npm i -g gatsby-cli
+```
 
-    Use the Gatsby CLI to create a new site, specifying a starter.
+Use the Gatsby CLI to create a new site, specifying a starter.
 
-    ```shell
-    # create a new Gatsby site using this starter
-    $ gatsby new opinionated-project https://github.com/datacrafts-io/gatsby-opinionated-starter
-    ```
+```shell
+# create a new Gatsby site using this starter
+$ gatsby new opinionated-project https://github.com/datacrafts-io/gatsby-opinionated-starter
+```
+
+## Running project:
+
+```shell
+$ npm run develop
+```
+
+Build assets for deploy
+
+```shell
+$ gatsby build
+```
 
 ## 🎓 Learning Gatsby
 
@@ -47,8 +56,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to official documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-### 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/datacrafts-io/gatsby-opinionated-starter)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/datacrafts-io/gatsby-opinionated-starter)
