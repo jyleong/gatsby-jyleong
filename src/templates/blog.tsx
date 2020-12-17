@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import TagDivs from '../components/shared/tags';
 import { ThemeContext } from '../context/theme';
-import { PostProps } from '../types';
+import { PostProps } from '@types';
 
 export const query = graphql`
   query($slug: String!) {

@@ -1,16 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles';
+import { Tag } from './sharedStyles';
 
 const { colors } = theme;
-
-const Tag = styled.div`
-  display: inline;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 5px;
-  background-color: ${(props) => props.theme === 'dark' ? colors.labelGreyishBlue : colors.labelYellow};
-`;
 
 const TagDivs: React.FC<any> = ({ tags, theme }) => {
   return (<>

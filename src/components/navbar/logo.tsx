@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { mixins } from '@styles';
-import { LogoProps } from '../../types';
+import { LogoProps } from '@types';
 
 const LogoWrap = styled.div`
   margin: auto 0;

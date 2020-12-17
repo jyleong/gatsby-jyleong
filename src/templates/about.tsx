@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { MdProps } from '../types';
+import { MdProps } from '@types';
 
 export const query = graphql`
   query {

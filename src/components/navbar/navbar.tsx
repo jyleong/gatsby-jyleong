@@ -5,7 +5,7 @@ import NavLinks from './navlinks';
 import Logo from './logo';
 import ThemeToggle from '../shared/themeToggle';
 import { ThemeContext } from '../../context/theme';
-import { NavProps, OpenProps } from '../../types';
+import { NavProps, OpenProps } from '@types';
 
 const { colors } = ThemeStyle ;
 

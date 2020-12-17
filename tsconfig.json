@@ -24,6 +24,7 @@
       "@pages": ["pages"],
       "@templates": ["templates"],
       "@blog": ["blogs"],
+      "@types": ["types"].
     },
   },
   "include": ["src", "global.d.ts"]

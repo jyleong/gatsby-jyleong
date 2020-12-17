@@ -1,10 +1,14 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { theme as ThemeStyle, mixins } from '../../styles';
+import { theme as ThemeStyle, mixins } from '@styles';
 import { ThemeContext } from '../../context/theme';
-import { WritingListProps } from '../../types';
+import { WritingListProps } from '@types';
 import TagDivs from '../../components/shared/tags';
+import {
+  BlogPostCard,
+  TitleH3Link
+} from '../../components/shared/sharedStyles';
 
 const { colors } = ThemeStyle;
 
@@ -21,19 +25,11 @@ const ListContainer = styled.div`
   padding: 0.5rem;
 `;
 
-const BlogPostCard = styled.div`
-  ${mixins.divShadow};
-`;
-
 const TitleH2 = styled.h2`
   text-align: center;
   width: 100%;
   position: relative;
   display: block;
-`;
-
-const TitleH3 = styled.h3`
-  ${mixins.inlineLink};
 `;
 
 const WritingsLink = styled(Link)`
@@ -62,7 +58,7 @@ const SectionWriting: React.FC<WritingListProps> = (props) => {
               <Link
                 to={blogPath}
               >
-              <TitleH3>{title}</TitleH3>
+              <TitleH3Link>{title}</TitleH3Link>
               <p>{formattedDate}</p>
               <TagDivs tags={tags} theme={theme}/>
               </Link>
