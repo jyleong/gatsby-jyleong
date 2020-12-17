@@ -53,7 +53,7 @@ const Tag = styled.div`
   margin: 2px;
   padding: 2px;
   border-radius: 5px;
-  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelTurquoise};
+  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelGreen};
 `;
 
 const TagDivs: React.FC<any> = ({ tags, theme }) => {
