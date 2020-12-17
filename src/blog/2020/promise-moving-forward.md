@@ -2,6 +2,7 @@
 title: "A Promise Moving Forward to Set My Own Direction"
 date: "2020-08-30"
 author: "James Leong"
+tags: ["journals"]
 ---
 
 Stagnant, subsistent, restless, half-assed, low-effort. A short handful of words to describe how I admittedly feel two-thirds into this year. I cannot blame this all onto the world as it is. Casting the blame onto something outside of my locus of control is too easy and does not identify what I can do to fix ultimately my problems.

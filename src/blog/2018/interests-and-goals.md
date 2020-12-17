@@ -2,6 +2,7 @@
 title: "Interests, Goals and why we have them"
 date: "2018-07-15"
 author: "James Leong"
+tags: ["wisdom", "philosophy"]
 ---
 
 From [Maslow's hierarchy of needs](https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs) I would say I have most of those basic needs met. I think about life a lot, I am looking more into self actualisation now.

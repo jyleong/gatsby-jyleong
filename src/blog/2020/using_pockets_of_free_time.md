@@ -2,6 +2,7 @@
 title: "Using pockets of free time"
 date: "2020-05-24"
 author: "James Leong"
+tags: ["self-development", "productivity", "journals"]
 ---
 
 During this quarantine it may seem that society is put into an abrupt standstill. By now we are at around 11 weeks of the stay at home order. As we have established new routines as adapting and evolving human beings do, continue taking action with the newfound free time and stillness that comes with the quieter life.

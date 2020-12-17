@@ -2,6 +2,7 @@
 title: "Wasting too much time"
 date: "2020-04-12"
 author: "James Leong"
+tags: ["productivity", "self-development", "minimalism"]
 ---
 
 ##### Quarantine habit updates....

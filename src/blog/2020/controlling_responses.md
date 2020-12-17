@@ -2,6 +2,7 @@
 title: "Controlling your responses"
 date: "2020-03-15"
 author: "James Leong"
+tags: ["stoicism", "journals"]
 ---
 
 ##### _You can only control how you respond to situations_

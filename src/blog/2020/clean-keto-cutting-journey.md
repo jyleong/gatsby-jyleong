@@ -2,6 +2,7 @@
 title: "Clean Keto Cutting Journey"
 date: "2020-01-02"
 author: "James Leong"
+tags: ["keto", "fitness", "diet"]
 ---
 
 _"Woah, I couldn't do Keto. What about the risks of heart disease and cholesterol?"_  

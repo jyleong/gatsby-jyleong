@@ -2,6 +2,7 @@
 export interface BlogPost {
   title: string,
   date: string,
+  tags: string[],
   id: string,
   slug: string,
 }
@@ -31,6 +32,7 @@ export interface IEdge {
     frontmatter: {
       title: string,
       date: string,
+      tags: string[],
     }
     fields: {
       slug: string,
@@ -84,6 +86,7 @@ export interface PostProps extends MdProps {
       frontmatter: {
         title?: string,
         date?: string,
+        tags?: string[],
       }
       fields: {
         slug: string,

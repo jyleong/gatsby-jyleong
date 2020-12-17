@@ -2,6 +2,7 @@
 title: "A year in review"
 date: "2018-01-05"
 author: "James Leong"
+tags: ["wisdom", "journals"]
 ---
 
 Looking back, 2017 was a big year. It was actually a year where I started setting goals, I refer to them as goals, rather than resolutions. Because no one ever really follows through with 'resolutions' haha. 

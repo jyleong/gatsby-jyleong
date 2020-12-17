@@ -2,6 +2,7 @@
 title: "Thoughts on a normal life"
 date: "2018-03-25"
 author: "James Leong"
+tags: ["wisdom", "philosophy", "journals"]
 ---
 
 All throughout life I have been in an isolated environment and moving to another isolated environment.

@@ -2,6 +2,7 @@
 title: "The home workouts that got me through lockdown"
 date: "2020-07-26"
 author: "James Leong"
+tags: ["fitness"]
 ---
 
 In the beginning of the lockdown all our lives were shifted. As the dust settled in what were you going to do with the necessities in your life? Such as homeschooling children, potential job loss/income, adaptation to a working from home situation and venturing out of your home only for the bare essentials.

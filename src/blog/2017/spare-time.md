@@ -2,6 +2,7 @@
 title: "What I do in my spare time"
 date: "2017-11-06T19:59:16-08:00"
 author: "James Leong"
+tags: ["wisdom", "journals"]
 ---
 
 We will find that we have a lot of extra time on our hands after transitioning to start work or start a co-op/internship compared to school. At least it was for me, while also still living at home during that period. It is great, but that does not mean I slack off after I came home from work. No no, I don't remember the last time I used my precious spare time on something like binging TV extensively, playing video games, or just slothing abouts at home. I do that sometimes, but I don't remember the last time when. I do have time for proper rest  which is enough and also not in excess.

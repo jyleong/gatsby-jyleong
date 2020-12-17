@@ -2,6 +2,7 @@
 title: "Isolation Experience Comparisons"
 date: "2020-05-17"
 author: "James Leong"
+tags: ["journals"]
 ---
 
 **I have been a bad citizen : (**

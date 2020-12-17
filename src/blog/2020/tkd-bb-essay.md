@@ -2,6 +2,7 @@
 title: "TaeKwonDo 2nd Dan Black Belt Essay"
 date: "2020-11-20"
 author: "James Leong"
+tags: ["fitness", "journals", "self-development"]
 ---
 
 _Some personal progress that I can share over this past crazy year - I'm taking the opportunity to test for my next Black Belt. As part of the examination requirements we are to write and present an essay. The topic: What does it mean to be a Black Belt?_

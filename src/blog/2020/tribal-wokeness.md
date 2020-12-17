@@ -2,6 +2,7 @@
 title: "Tribal Wokeness - People, Protestors, Police"
 date: "2020-06-07"
 author: "James Leong"
+tags: ["philososphy", "culture", "journals"]
 ---
 
 \*_Alert, if anything I write about in this post triggers you, pause for a second to think a bit deeper, grow thicker skin or click away._

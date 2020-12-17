@@ -40,6 +40,22 @@ const WritingsLink = styled(Link)`
   ${mixins.inlineLink};
 `;
 
+const Tag = styled.div`
+  display: inline;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelTurquoise};
+`;
+
+const TagDivs: React.FC<any> = ({ tags, theme }) => {
+  return (<>
+    {tags && tags.map((t: string, idx: number) => (
+      <Tag key={idx} theme={theme}>{t}</Tag>
+    ))}
+  </>)
+}
+
 const SectionWriting: React.FC<WritingListProps> = (props) => {
   const { theme } = useContext(ThemeContext);
   return (
@@ -47,7 +63,7 @@ const SectionWriting: React.FC<WritingListProps> = (props) => {
       <TitleH2>Recent Writings</TitleH2>
       <ListContainer>
         {props.posts.map((p) => {
-          const { id, date, slug, title } = p;
+          const { id, date, slug, tags, title } = p;
           const yr = date.split("-")[0];
           const blogPath = `/blog/${yr}/${slug}`;
           let dateObj: Date;
@@ -63,6 +79,7 @@ const SectionWriting: React.FC<WritingListProps> = (props) => {
               >
               <TitleH3>{title}</TitleH3>
               <p>{formattedDate}</p>
+              <TagDivs tags={tags} theme={theme}/>
               </Link>
             </BlogPostCard>
           )

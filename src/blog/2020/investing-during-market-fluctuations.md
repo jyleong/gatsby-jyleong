@@ -2,6 +2,7 @@
 title: "Investing during market fluctuations"
 date: "2020-03-08"
 author: "James Leong"
+tags: ["FIRE", "investing"]
 ---
 
 _\* In case you didn't know or are reading this blogpost from the future, currently the world has been put into a disarray by the Covid-19, AKA Corona Virus_.

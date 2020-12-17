@@ -2,6 +2,7 @@
 title: "People are able to adapt"
 date: "2020-03-29"
 author: "James Leong"
+tags: ["philosophy", "stoicism", "self-development"]
 ---
 
 ##### Modern day ordinary leisure

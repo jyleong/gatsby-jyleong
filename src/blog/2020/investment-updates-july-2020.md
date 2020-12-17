@@ -2,6 +2,7 @@
 title: "Investment updates July 2020"
 date: "2020-07-19"
 author: "James Leong"
+tags: ["FIRE", "investing"]
 ---
 
 We are well into a crazy year, by now its a good time to examine how my investments are doing. Hey so if you are reading this from the future... as the title states: This will be a brief rundown of investments in the jaw dropping year of 2020.

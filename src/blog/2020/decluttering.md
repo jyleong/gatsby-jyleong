@@ -2,6 +2,7 @@
 title: "Decluttering"
 date: "2020-01-19"
 author: "James Leong"
+tags: ["minimalism", "journals", "stoicism"]
 ---
 
 This was around the time I went deep into Stoicism philosophies. Also, I wanted to make minimalism a part of this blog's identity.

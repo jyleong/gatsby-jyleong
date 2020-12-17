@@ -2,6 +2,7 @@
 title: "No one knows what they're doing"
 date: "2018-03-04"
 author: "James Leong"
+tags: ["philosophy", "wisdom"]
 ---
 
 

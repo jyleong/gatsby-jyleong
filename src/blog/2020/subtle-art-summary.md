@@ -2,6 +2,7 @@
 title: "The Subtle Art of Not Giving a Fuck (Book Summary)"
 date: "2020-05-11"
 author: "James Leong"
+tags: ["book reviews", "self-development"]
 ---
 
 ![Subtle Art](/blog/images/Screen-Shot-2020-05-10-at-2.01.37-PM.png)

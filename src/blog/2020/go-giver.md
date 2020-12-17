@@ -2,6 +2,7 @@
 title: "The Go-Giver: Main points"
 date: "2020-07-12"
 author: "James Leong"
+tags: ["book reviews"]
 ---
 
 _The Go-Giver_  

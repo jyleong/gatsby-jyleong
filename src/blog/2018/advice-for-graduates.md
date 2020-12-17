@@ -2,6 +2,7 @@
 title: "Jordan Peterson's guidance for graduates"
 date: "2018-06-16"
 author: "James Leong"
+tags: ["wisdom", "self-development", "philosophy"]
 ---
 
 Taken from Dr. Jordan B. Peterson's video and from 12 rules for life [Video](https://www.youtube.com/watch?v=-JfIbRdUfSU)

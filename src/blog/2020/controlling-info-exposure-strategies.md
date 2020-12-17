@@ -2,6 +2,7 @@
 title: "Controlling Information Exposure - Strategies Employed"
 date: "2020-10-04"
 author: "James Leong"
+tags: ["life hacks", "journals", "minimalism", "philosophy"]
 ---
 
 For the past month or so I made it a deliberate goal to ignore and stop any form of social media usage and news that did not enrich me.

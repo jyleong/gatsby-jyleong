@@ -2,6 +2,7 @@
 title: "Personal Journalling Insights"
 date: "2020-02-22"
 author: "James Leong"
+tags: ["journals", "stoicism", "wisdom"]
 ---
 
 #### Background

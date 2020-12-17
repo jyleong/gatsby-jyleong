@@ -2,6 +2,7 @@
 title: "Justifying Minimalism with Hobbies"
 date: "2020-02-16"
 author: "James Leong"
+tags: ["minimalism", "journals"]
 ---
 
 _Minimalism is about finding intention and value living with less._

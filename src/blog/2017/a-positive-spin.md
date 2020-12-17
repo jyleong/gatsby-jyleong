@@ -2,6 +2,7 @@
 title: "Put a positive spin on things"
 date: "2017-11-18"
 author: "James Leong"
+tags: ["wisdon", "philosophy", "self-development"]
 ---
 
 Now, people that know me would say I'm quite serious and pretty blunt with his opinions. I mean, it's sort of true. I'm a blunt guy. I only say bad things, when it is to make a point. However no one wants to be around, hang around, or work with a negative nancy. 

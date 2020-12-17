@@ -2,6 +2,7 @@
 title: "Identifying the inner sloth"
 date: "2020-10-18"
 author: "James Leong"
+tags: ["productivity", "philosophy", "journals", "wisdom"]
 ---
 
 It has been a little or seven months for myself in this pandemic situation. While life and society adjusted and slowly resumed, have you moved with life, or have you been simply following it along?

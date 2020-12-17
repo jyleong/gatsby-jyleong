@@ -2,6 +2,7 @@
 title: "\"Deep Work\" (Book Summary and thoughts)"
 date: "2020-02-09"
 author: "James Leong"
+tags: ["book reviews", "philosophy", "self-development"]
 ---
 
 ![Book Cover](/blog/images/deep_work_cover.jpg)

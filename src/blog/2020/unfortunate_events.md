@@ -2,6 +2,7 @@
 title: "Stoic practices for unfortunate events"
 date: "2020-03-03"
 author: "James Leong"
+tags: ["philosophy", "culture"]
 ---
 
 ### Background

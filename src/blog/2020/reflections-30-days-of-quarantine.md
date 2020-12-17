@@ -2,6 +2,7 @@
 title: "Reflections after 30 days of quarantine"
 date: "2020-04-05"
 author: "James Leong"
+tags: ["journals"]
 ---
 
 ##### How it started out

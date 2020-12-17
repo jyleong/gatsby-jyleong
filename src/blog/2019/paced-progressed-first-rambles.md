@@ -2,6 +2,7 @@
 title: "First Rambles"
 date: "2019-12-23"
 author: "James Leong"
+tags: ["rambles"]
 ---
 
 Welcome to PacedProgress! I wanted to start off with the reasons for starting this blog here in 2020, yes a blog in 2020. Why would someone start a blog in this digital age where everything is designed to grab someones attention in mere seconds before they scroll or click away to somewhere else?

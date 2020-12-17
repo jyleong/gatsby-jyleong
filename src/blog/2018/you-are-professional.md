@@ -2,6 +2,7 @@
 title: "10 signs you are professional"
 date: "2018-05-10"
 author: "James Leong"
+tags: ["wisdom", "self-development"]
 ---
 
 

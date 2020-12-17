@@ -2,6 +2,7 @@
 title: "Working from home productivity tips"
 date: "2020-03-22"
 author: "James Leong"
+tags: ["journals"]
 ---
 
 _Update: So far in Canada we are forced to self isolate and maintain social distancing to mitigate the spread of the COVID-19 virus so that our healthcare system will not be flooded with cases._

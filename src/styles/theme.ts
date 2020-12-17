@@ -15,6 +15,9 @@ const theme = {
 		primaryBackgroundDark: '#118ab2',
 		secondaryBackgroundDark: '#073b4c',
 
+		labelTurquoise: '#72efdd',
+		labelMauve: '#5f0f40',
+
 		contrast: '#111',
     contrastLightest: '#dad9d9',
     accent: 'red',

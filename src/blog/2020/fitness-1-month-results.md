@@ -2,6 +2,7 @@
 title: "Fitness 1 Month results"
 date: "2020-02-02"
 author: "James Leong"
+tags: ["keto", "fitness", "diet", "training"]
 ---
 
 After a month of training and eating, (which involved a modification in the plan midway) I decided to record my physical measurements. Those are the measurements regarding my body mass and the weights used for Occam's protocol.

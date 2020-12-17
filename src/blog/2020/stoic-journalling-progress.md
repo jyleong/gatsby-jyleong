@@ -2,6 +2,7 @@
 title: "Stoic Journalling Progress"
 date: "2020-04-19"
 author: "James Leong"
+tags: ["journals", "stoicism"]
 ---
 
 The title of this post has the word progress in it but really it's probably a regression? Or adaptation. update? Can I just call it -gress? Hah

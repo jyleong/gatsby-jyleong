@@ -2,6 +2,7 @@
 title: "Soft resetting the mind"
 date: "2020-09-13"
 author: "James Leong"
+tags: ["stoicism", "self-development", "productivity"]
 ---
 
 **Ask yourself, are all things things I think about _REALLY_ important?**

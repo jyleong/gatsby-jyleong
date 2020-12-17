@@ -2,6 +2,7 @@
 title: "Year in review 2018"
 date: "2019-01-02"
 author: "James Leong"
+tags: ["journals"]
 ---
 
 2018, for the most part was when I started to carve out my own path. On top of setting goals I set out a general direction for myself. Reflecting over the year I can say I'm content, not yet truly accomplished and satisfied yet, but if I keep this consistency up each year in 5 to 10 years I will see noticeable positive improvements in all aspects of my life.

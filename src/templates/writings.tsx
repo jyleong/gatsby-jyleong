@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { theme, mixins } from '../styles';
+import { theme as ThemeStyle, mixins } from '../styles';
+import { ThemeContext } from '../context/theme';
 import { PageContextProps } from '../types';
+
+const { colors } = ThemeStyle;
 
 const TitleH1 = styled.h1`
   text-align: center;
-  font-size: ${theme.fontSizes.xlarge};
+  font-size: ${ThemeStyle.fontSizes.xlarge};
 `;
 
 const TitleH3 = styled.h3`
   ${mixins.inlineLink};
 `;
-
 
 const BodyContainer = styled.div`
   ${mixins.flexCenter};
@@ -46,7 +48,24 @@ const NavNumberedListLink = styled(Link)`
   }
 `;
 
+const Tag = styled.div`
+  display: inline;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelTurquoise};
+`;
+
+const TagDivs: React.FC<any> = ({ tags, theme }) => {
+  return (<>
+    {tags && tags.map((t: string, idx: number) => (
+      <Tag key={idx} theme={theme}>{t}</Tag>
+    ))}
+  </>)
+}
+
 const Writings: React.FC<PageContextProps> = (props) => {
+  const { theme } = useContext(ThemeContext);
   const { data } = props;
   const { numPages, currentPage } = props.pageContext;
   const isFirst = currentPage === 1
@@ -61,7 +80,7 @@ const Writings: React.FC<PageContextProps> = (props) => {
       <BodyContainer>
         <ListContainer>
           {posts.map((edge: any) => {
-            const { title, date } = edge.node && edge.node.frontmatter;
+            const { title, date, tags } = edge.node && edge.node.frontmatter;
             const id = edge.node.id;
             const slug = edge.node.fields.slug;
             const yr = date.split("-")[0];
@@ -79,6 +98,7 @@ const Writings: React.FC<PageContextProps> = (props) => {
                 >
                   <TitleH3>{title}</TitleH3>
                   <p>{formattedDate}</p>
+                  <TagDivs tags={tags} theme={theme}/>
                 </Link>
               </BlogPostCard>
             )
@@ -136,6 +156,7 @@ export const writingsListQuery = graphql`
             frontmatter {
               title
               date
+              tags
             }
             fields {
               slug

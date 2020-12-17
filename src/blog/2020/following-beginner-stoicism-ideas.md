@@ -2,6 +2,7 @@
 title: "Following Beginner Stoicism Ideas"
 date: "2020-01-05"
 author: "James Leong"
+tags: ["stoicism", "journals"]
 ---
 
 When it comes to ideas of philosophy or religion I am very much new to this. However don't you feel that something is missing in our lives when we are in an ever advancing society and economy from the benefits of science, technology? Does this human/societal progress abstract away from us the need a moral and ethical substructure?

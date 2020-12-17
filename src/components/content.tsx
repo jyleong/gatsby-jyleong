@@ -9,6 +9,7 @@ const Content: React.FC<ContentProps> = (props) => {
     return {
       title: edge.node.frontmatter.title,
       date: edge.node.frontmatter.date,
+      tags: edge.node.frontmatter.tags,
       id: edge.node.id,
       slug: edge.node.fields.slug,
     }

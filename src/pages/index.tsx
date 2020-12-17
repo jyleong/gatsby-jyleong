@@ -26,6 +26,7 @@ const IndexPage: React.FC = (props: any) => {
             frontmatter {
               title
               date
+              tags
             }
             fields {
               slug

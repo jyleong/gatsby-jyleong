@@ -2,6 +2,7 @@
 title: "Realizing car ownership costs as a minimalist"
 date: "2020-06-28"
 author: "James Leong"
+tags: ["minimalism", "FIRE", "personal finance", "life hacks"]
 ---
 
 ### Getting the car

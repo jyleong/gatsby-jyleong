@@ -2,6 +2,7 @@
 title: "Trendy Diets"
 date: "2020-06-14"
 author: "James Leong"
+tags: ["fitness", "diets", "keto"]
 ---
 
 #### **Confessions**

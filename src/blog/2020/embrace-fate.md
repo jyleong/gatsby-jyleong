@@ -2,6 +2,7 @@
 title: "Embrace the Fate"
 date: "2020-06-21"
 author: "James Leong"
+tags: ["stoicism", "philosophy"]
 ---
 
 What is "[Amor Fati"](https://www.youtube.com/watch?v=oBeJfprKSyw)?

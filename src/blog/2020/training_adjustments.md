@@ -2,6 +2,7 @@
 title: "Physical fitness and diet Update mid-Jan 2020"
 date: "2020-01-26"
 author: "James Leong"
+tags: ["fitness", "diet"]
 ---
 
 _Note: This is a follow-up to my previous fitness and health goal post at the beginning of the [year](https://pacedprogress.com/clean-keto-cutting-journey/)._

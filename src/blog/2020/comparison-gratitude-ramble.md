@@ -2,6 +2,7 @@
 title: "Comparison, Appreciation, Gratitude, Humility"
 date: "2020-08-23"
 author: "James Leong"
+tags: ["philosophy", "stoicism", "journals"]
 ---
 
 I was having a chat with a coworker and the topic of salaries, lifestyle and people in industry came up. Frequently these talking points often leads to a sigh of dissatisfaction of our current situation, come the bitching and moaning comparing ourselves to people in our similar circumstances who make slightly X more or have Y, have Z, doing W.

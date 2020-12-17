@@ -2,6 +2,7 @@
 title: "Introducing Stoicism to normies"
 date: "2020-05-03"
 author: "James Leong"
+tags: ["stoicism", "journals"]
 ---
 
 So I have been re-reading one of my favourite self-improvement books: _The Subtle Art of Not Giving a Fuck_ By Mark Manson.

@@ -2,6 +2,7 @@
 title: "The Giving Tree"
 date: "2017-10-29"
 author: "James Leong"
+tags: ["wisdom", "philosophy"]
 ---
 
 [The Giving Tree](https://www.slideshare.net/wicaksana/the-giving-tree-3293089)
