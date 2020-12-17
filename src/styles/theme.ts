@@ -15,8 +15,8 @@ const theme = {
 		primaryBackgroundDark: '#118ab2',
 		secondaryBackgroundDark: '#073b4c',
 
-		labelGreen: '#a5ffd6',
-		labelMauve: '#5f0f40',
+		labelYellow: '#efea5a',
+		labelGreyishBlue: '#3d5a80',
 
 		contrast: '#111',
     contrastLightest: '#dad9d9',

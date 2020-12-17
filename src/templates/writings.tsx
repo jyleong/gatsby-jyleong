@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import { theme as ThemeStyle, mixins } from '../styles';
 import { ThemeContext } from '../context/theme';
 import { PageContextProps } from '../types';
+import TagDivs from '../components/shared/tags';
 
 const { colors } = ThemeStyle;
 
@@ -47,22 +48,6 @@ const NavNumberedListLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-
-const Tag = styled.div`
-  display: inline;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 5px;
-  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelGreen};
-`;
-
-const TagDivs: React.FC<any> = ({ tags, theme }) => {
-  return (<>
-    {tags && tags.map((t: string, idx: number) => (
-      <Tag key={idx} theme={theme}>{t}</Tag>
-    ))}
-  </>)
-}
 
 const Writings: React.FC<PageContextProps> = (props) => {
   const { theme } = useContext(ThemeContext);

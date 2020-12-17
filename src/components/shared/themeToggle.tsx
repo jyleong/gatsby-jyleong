@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { FaRegSun, FaRegMoon} from 'react-icons/fa';
-import { ThemeContext, Themes } from '../context/theme';
+import { ThemeContext, Themes } from '../../context/theme';
 
 const ThemeToggle: FC = () => (
   <ThemeContext.Consumer>

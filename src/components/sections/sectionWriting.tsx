@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { theme as ThemeStyle, mixins } from '../../styles';
 import { ThemeContext } from '../../context/theme';
 import { WritingListProps } from '../../types';
+import TagDivs from '../../components/shared/tags';
 
 const { colors } = ThemeStyle;
 
@@ -39,22 +40,6 @@ const WritingsLink = styled(Link)`
   text-align: center;
   ${mixins.inlineLink};
 `;
-
-const Tag = styled.div`
-  display: inline;
-  margin: 2px;
-  padding: 2px;
-  border-radius: 5px;
-  background-color: ${(props) => props.theme === 'dark' ? colors.labelMauve : colors.labelGreen};
-`;
-
-const TagDivs: React.FC<any> = ({ tags, theme }) => {
-  return (<>
-    {tags && tags.map((t: string, idx: number) => (
-      <Tag key={idx} theme={theme}>{t}</Tag>
-    ))}
-  </>)
-}
 
 const SectionWriting: React.FC<WritingListProps> = (props) => {
   const { theme } = useContext(ThemeContext);
