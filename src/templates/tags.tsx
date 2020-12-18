@@ -50,6 +50,8 @@ const Tags: React.FC<TagProps> = (props) => {
           {edges.map((e) => {
             const { slug } = e.node.fields
             const { title, date } = e.node.frontmatter
+            const yr = date.split("-")[0];
+            const blogPath = `/blog/${yr}/${slug}`;
             let formattedDate: string = '';
             if (date) {
               const dateObj = new Date(date);
@@ -57,7 +59,7 @@ const Tags: React.FC<TagProps> = (props) => {
             }
             return (
               <BlogPostCard key={slug}>
-                <Link to={slug}>
+                <Link to={blogPath}>
                   <TitleH3Link>{title}</TitleH3Link>
                   <p>{formattedDate}</p>
                 </Link>
