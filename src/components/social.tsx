@@ -1,6 +1,7 @@
 import React from 'react';
 import config from '@config';
 import styled from 'styled-components';
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { theme, media } from '@styles';
 
@@ -18,7 +19,7 @@ const SocialItems = styled.div`
 const SocialItem = styled.div`
 `;
 
-const SocialLink = styled.a`
+const SocialLink = styled(OutboundLink)`
   padding: 7px;
   color: ${theme.colors.primaryGray};
   display: flex;
@@ -28,7 +29,7 @@ const SocialLink = styled.a`
   &:hover,
   &:focus {
     transform: translateY(-5px);
-    color: ${theme.colors.primary};
+    color: ${theme.colors.primaryAccent};
   }
 `;
 

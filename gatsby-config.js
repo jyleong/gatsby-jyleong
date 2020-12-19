@@ -1,3 +1,7 @@
+let env = process.env.NODE_ENV || 'development';
+
+require('dotenv').config({ path: `./.env.${env}`});
+
 module.exports = {
   siteMetadata: {
     title: 'The Stoic SWE',
@@ -69,7 +73,6 @@ module.exports = {
         icon: 'src/assets/jl-icon.png', // This path is relative to the root of the site.
       },
     },
-
     {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
@@ -86,6 +89,19 @@ module.exports = {
         extensions: [
           'ts', 'tsx',
         ],
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
       }
     }
   ],

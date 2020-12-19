@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -79,19 +78,6 @@ const SEO: React.FC<SeoProps> = ({ description = "", lang = "en", meta = [], tit
       meta={defaultMetaData.concat(meta)}
     />
   );
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(
-    PropTypes.shape({
-      property: PropTypes.string,
-      name: PropTypes.string,
-      content: PropTypes.string.isRequired,
-    }),
-  ),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;
