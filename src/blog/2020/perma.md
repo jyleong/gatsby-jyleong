@@ -2,7 +2,7 @@
 title: "Introduction to the PERMA model of Happiness"
 date: "2020-08-09"
 author: "James Leong"
-tags: ["wisdom", "philosphy", "journals"]
+tags: ["wisdom", "philosophy", "journals"]
 ---
 
 _The theoretical model of happiness PERMA by Martin Seligman postulates certain crucial elements to reach happiness_. _You can read about this theory in [detail](https://positivepsychology.com/perma-model/)_
