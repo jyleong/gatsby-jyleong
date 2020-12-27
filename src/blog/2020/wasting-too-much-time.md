@@ -23,7 +23,7 @@ Although I have picked up playing a console game on the side. Since gaming is a 
 
 ##### My personal vice
 
-Being very critical and observant of my behaviours over the last two weeks I notice a my the real big problem I have developed since quarantine. That has further spiked this week was the matter of constants browsing on YouTube for content to watch and binging shows on streaming services.
+Being very critical and observant of my behaviours over the last two weeks I notice a real big problem I have developed since quarantine. That has further spiked this week. That was the matter of constant browsing on YouTube for content to watch and binging shows on streaming services.
 
 Just like browsing the internet or social media it is fairly easy to do, very addicting when the quality of content is great and not very active or focused like my work or gaming.
 
