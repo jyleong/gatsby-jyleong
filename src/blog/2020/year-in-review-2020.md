@@ -11,7 +11,7 @@ So many major events happened all within the year where normally these pivotal m
 
 - A pandemic, looking through history should happen and test our society once per generation
 - An economic fallout, once per 5-10 years
-- Civil unrest, also once per genration
+- Civil unrest, also once per generation
 - the US Presidential elections, every 4 years
 
 All of this exacerbates a shift in societal norms

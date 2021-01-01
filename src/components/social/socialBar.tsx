@@ -1,39 +1,11 @@
 import React from 'react';
 import config from '@config';
-import styled from 'styled-components';
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { theme, media } from '@styles';
+import { theme } from '@styles';
+import { SocialContainer, SocialItems, SocialItem, SocialLink } from '../shared/sharedStyles';
 
 
-const SocialContainer = styled.div`
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-`;
-
-const SocialItems = styled.div`
-  display: flex;
-`;
-
-const SocialItem = styled.div`
-`;
-
-const SocialLink = styled(OutboundLink)`
-  padding: 7px;
-  color: ${theme.colors.primaryGray};
-  display: flex;
-  transition: ${theme.transition};
-  font-size: ${theme.fontSizes.xxlarge};
-  ${media.thone`font-size: ${theme.fontSizes.xlarge};`};
-  &:hover,
-  &:focus {
-    transform: translateY(-5px);
-    color: ${theme.colors.primaryAccent};
-  }
-`;
-
-const Social: React.FC = () => {
+const SocialBar: React.FC = () => {
   const { socialMedia } = config;
   return (
     <SocialContainer>
@@ -60,4 +32,4 @@ const Social: React.FC = () => {
   );
 };
 
-export default Social;
+export default SocialBar;

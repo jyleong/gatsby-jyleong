@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import TagDivs from '../components/shared/tags';
+import SharingBar from '../components/social/sharingBar';
 import { ThemeContext } from '../context/theme';
 import { PostProps } from '@types';
 
@@ -48,6 +49,9 @@ const Blog: React.FC<PostProps> = (props: PostProps) => {
         {tags !== null && <TagDivs tags={tags} theme={theme}/>}
       </BlogContent>
       <BlogContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></BlogContent>
+      <BlogContent>
+        <SharingBar title={title} location={props.location}/>
+      </BlogContent>
     </Layout>
   )
 };

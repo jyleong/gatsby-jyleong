@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { mixins } from '@styles';
-import Social from './social';
+import SocialBar from './social/socialBar';
 import { FooterProps } from '@types';
 
 const LayoutFooter = styled.footer`
@@ -20,7 +20,7 @@ const FooterDesc = styled.div`
 const FooterComponent: React.FC<FooterProps> = ({ author }) => {
   return (
     <LayoutFooter>
-      <Social />
+      <SocialBar />
       <FooterDesc>
         Built with ♥ by {author}, © {new Date().getFullYear()}
       </FooterDesc>
