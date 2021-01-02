@@ -1,9 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import { theme } from '../../styles';
 import { Tag } from './sharedStyles';
-
-const { colors } = theme;
 
 const TagDivs: React.FC<any> = ({ tags, theme }) => {
   return (<>

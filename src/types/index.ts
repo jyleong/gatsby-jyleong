@@ -148,3 +148,9 @@ export interface TagsPageProps {
   };
   location: any;
 }
+
+export interface SharingBarProps {
+  title: string;
+  location: any;
+}
+

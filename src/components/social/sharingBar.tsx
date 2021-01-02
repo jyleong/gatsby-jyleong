@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaTwitter, FaFacebookSquare, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { SocialItems, SocialItem, SocialLink } from '../shared/sharedStyles';
+import { SharingBarProps } from '../../types';
 
 const SharingContainer = styled.div`
   margin: 0 auto;
@@ -19,7 +20,7 @@ const BoldDiv = styled.div`
   font-weight: bold;
 `;
 
-const SharingBar: React.FC = ({ location, title }: any) => {
+const SharingBar: React.FC<SharingBarProps> = ({ location, title }) => {
   const { href } = location;
   const fbUrl = `https://www.facebook.com/sharer.php?u=${href}`;
   const twitterUrl = `https://twitter.com/share?url=${href}`;

@@ -49,9 +49,11 @@ const Blog: React.FC<PostProps> = (props: PostProps) => {
         {tags !== null && <TagDivs tags={tags} theme={theme}/>}
       </BlogContent>
       <BlogContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></BlogContent>
-      <BlogContent>
-        <SharingBar title={title} location={props.location}/>
-      </BlogContent>
+      {slug !== 'resume' && 
+        <BlogContent>
+          <SharingBar title={title} location={props.location}/>
+        </BlogContent>
+      }
     </Layout>
   )
 };
