@@ -50,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme === 'dark' ? colors.primaryBackgroundDark : colors.primaryBackground};
     color: ${(props) => props.theme === 'dark' ? colors.white : colors.primaryDark};
     font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
-    max-width: 1400px;
   }
 
   figure {
