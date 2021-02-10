@@ -12,12 +12,7 @@ module.exports = {
   plugins: [
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-styled-components',
-      options: {
-        displayName: true
-      }
-    },
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
