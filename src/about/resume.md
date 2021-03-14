@@ -19,7 +19,9 @@ _For those who prefer a traditional [resume format](../assets/JYLResume.pdf)_
 __Dialpad__
 
 __Software Engineer | Vancouver, BC | Aug 2019 - Present__
-* Feature-oriented engineer creating and integrating telephony/Enterprise VoIP features over desk phone hardware to provide feature parity for customers using Dialpad as a telecommunications service provider
+* Exposed presence and state support for desk phone hardware using the SIP Publish and Presence frameworks to synchronize the phone states which establishes a seamless experience with Dialpad’s soft clients
+* Simplified desk phone activation and registration process with a self-hosted activation server, reducing the complex UI/UX flow and redundant reboot cycles
+* Created Device line key layout settings platform which provides the users the flexibility to configure keys for customized features and behaviours on their phones
 * Extracted call statistics from hardware into Google Datastore and BigQuery for analytics, providing users and administrators insights over calling behaviour
 * Upgraded legacy desktop software and created tools to monitor, diagnose and triage future unknown dependencies around interlinked software components
 
@@ -38,15 +40,15 @@ __Junior SW Dev/SDET Co-op | Vancouver, BC |  Dec 2016 - Sept 2017__
 
 * Designed, built and integrated CI/CD with AWS Code Pipeline to build, test and release current front end and REST API increasing test coverage to 70%
 * Built a Flask web application as a testing infrastructure to schedule, compile, execute, measure and log builds to test the results of their new storage optimization analytics software
-* Created sensor simulation tool to simulate real appliance energy consumption with Java and automating it to provide reliable data for analytics developers
-* Extended and refactored Python/Java/Jenkins automation framework on Scala REST API, streamlining the CI pipeline and providing more robust coverage
+* Created sensor simulation tool with Java to simulate real appliance energy consumption and automating its execution providing analytics developers an alternative dataset to test their models
+* Extended and refactored Python/Java/Jenkins automation framework for public facing REST APIs, streamlining the CI pipeline and providing robust coverage before release
 
 __Schneider Electric__
 
 __Software Test Engineer Co-op | Burnaby, BC | Sept 2015 - Apr 2016__
 
-* Automated frontend tests with Python/Selenium for functional and requirements allowing team to move faster with confidence from regression tests
-* Refactored automation codebase by understanding the embedded system, leading to a system executing faster and outputting understandable information
+* Automated front end regression testing with Python/Selenium allowing team to iterate with confidence
+* Refactored embedded system automation codebase, leading to a system executing faster with readable output
 
 __SFU Ancillary Services__
 
